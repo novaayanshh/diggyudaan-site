@@ -11,7 +11,7 @@ export function Logo({ className = "" }: { className?: string }) {
       <img
         src="/logo.png"
         alt="DigyUdaan Media House - Let's Fly Together"
-        className="h-10 w-auto md:h-12"
+        className="h-14 w-auto md:h-16 lg:h-20 object-contain"
       />
     </motion.div>
   );
