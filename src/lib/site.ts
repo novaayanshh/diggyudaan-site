@@ -1,16 +1,15 @@
 import {
-  Megaphone,
   Search,
   Code2,
   Film,
   Share2,
-  PenLine,
-  BookImage,
   UserPlus,
-  Sparkles,
   Crown,
   Target,
   ShoppingBag,
+  Palette,
+  Image,
+  Radio,
 } from "lucide-react";
 
 export const SITE = {
@@ -36,41 +35,49 @@ export type Service = {
   title: string;
   short: string;
   description: string;
-  icon: typeof Megaphone;
+  icon: typeof Search;
 };
 
 export const SERVICES: Service[] = [
   {
-    slug: "meta-ads",
-    title: "Meta Ads",
-    short: "Facebook & Instagram performance",
+    slug: "brand-identity",
+    title: "Brand Identity",
+    short: "Positioning, logo & guidelines",
     description:
-      "ROAS-obsessed Meta campaigns engineered for D2C. Creative testing, audience laddering and conversion optimization built to scale from zero to ₹1 crore/month.",
+      "Strategic brand foundations — positioning, naming, logo systems and guidelines that give your D2C brand a distinct, memorable identity from day one.",
+    icon: Palette,
+  },
+  {
+    slug: "performance-marketing",
+    title: "Performance Marketing",
+    short: "Meta, Google & full-funnel ads",
+    description:
+      "ROAS-obsessed paid media across Meta, Google Search, Shopping and YouTube. Creative testing and audience laddering built to scale profitably.",
     icon: Target,
   },
   {
-    slug: "google-ads",
-    title: "Google Ads",
-    short: "Search, Shopping & YouTube",
+    slug: "social-media-management",
+    title: "Social Media Management",
+    short: "Community & content calendars",
     description:
-      "Full-funnel Google Ads across Search, PMax, Shopping and YouTube. Intent-first bidding and creative that turns clicks into customers.",
-    icon: Search,
+      "Editorial calendars, community management and platform-native storytelling that grows real audiences — not vanity followers.",
+    icon: Share2,
   },
   {
-    slug: "web-development",
-    title: "Web Development",
-    short: "Shopify & custom stores",
+    slug: "ecommerce-marketing",
+    title: "Ecommerce Marketing",
+    short: "Marketplace & store growth",
     description:
-      "High-converting Shopify stores and custom web builds. Blazing performance, 2%+ conversion rate baseline, and pixel-perfect execution.",
-    icon: Code2,
+      "Marketplace optimization, retention flows and conversion-focused campaigns that turn store traffic into repeat revenue.",
+    icon: ShoppingBag,
   },
   {
-    slug: "seo",
-    title: "SEO",
-    short: "Organic growth engine",
+    slug: "graphic-design",
+    title: "Graphic Design",
+    short: "Creatives, assets & catalogues",
     description:
-      "Technical SEO, content clusters and link authority tuned for D2C search intent. Rank, convert, retain.",
-    icon: Sparkles,
+      "Studio-grade ad creatives, product catalogues and PDP assets designed to lift click-through and conversion across every channel.",
+    icon: Image,
   },
   {
     slug: "video-production",
@@ -81,28 +88,20 @@ export const SERVICES: Service[] = [
     icon: Film,
   },
   {
-    slug: "social-media-marketing",
-    title: "Social Media Marketing",
-    short: "Community & content",
+    slug: "seo",
+    title: "SEO",
+    short: "Organic growth engine",
     description:
-      "Editorial calendars, community management and platform-native storytelling that grows real audiences — not vanity followers.",
-    icon: Share2,
+      "Technical SEO, content clusters and link authority tuned for D2C search intent. Rank, convert, retain.",
+    icon: Search,
   },
   {
-    slug: "content-writing",
-    title: "Content Writing",
-    short: "Copy that converts",
+    slug: "website-development",
+    title: "Website Development",
+    short: "Shopify & custom stores",
     description:
-      "Brand voice, landing pages, ad copy, email sequences and long-form. Words engineered to move metrics.",
-    icon: PenLine,
-  },
-  {
-    slug: "catalogue-creation",
-    title: "Catalogue Creation",
-    short: "Product photography & assets",
-    description:
-      "Studio-grade product photography, marketplace catalogues and PDP assets built to lift click-through and conversion.",
-    icon: BookImage,
+      "High-converting Shopify stores and custom web builds. Blazing performance, 2%+ conversion rate baseline, and pixel-perfect execution.",
+    icon: Code2,
   },
   {
     slug: "influencer-marketing",
@@ -113,14 +112,6 @@ export const SERVICES: Service[] = [
     icon: UserPlus,
   },
   {
-    slug: "meme-marketing",
-    title: "Meme Marketing",
-    short: "Culture-first virality",
-    description:
-      "Native, culturally-tuned meme campaigns that punch above their weight in reach, saves and shares.",
-    icon: Megaphone,
-  },
-  {
     slug: "brand-management",
     title: "Brand Management",
     short: "End-to-end brand ops",
@@ -129,12 +120,12 @@ export const SERVICES: Service[] = [
     icon: Crown,
   },
   {
-    slug: "d2c-launch",
-    title: "D2C Launch System",
-    short: "Zero → 100+ orders in 30 days",
+    slug: "offline-marketing",
+    title: "Offline Marketing",
+    short: "OOH, print & on-ground",
     description:
-      "Our signature launch playbook: brand, store, creatives and performance marketing under one roof to hit first 100+ orders in month one.",
-    icon: ShoppingBag,
+      "Out-of-home, print and on-ground activations that extend your brand's reach beyond the screen and into the real world.",
+    icon: Radio,
   },
 ];
 

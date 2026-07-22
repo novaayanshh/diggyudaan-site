@@ -10,7 +10,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Every capability your D2C brand needs — Meta Ads, Google Ads, SEO, Shopify, video, content, influencer, brand management. All in-house.",
+          "Every capability your D2C brand needs — Brand Identity, Performance Marketing, Social Media Management, Ecommerce Marketing, Graphic Design, Video Production  SEO, Website Development, influencer, brand management, Offline Marketing. All in-house.",
       },
       { property: "og:title", content: "DigyUdaan Services — Under One Roof" },
       { property: "og:description", content: "Performance marketing, brand and tech — 100% in-house." },

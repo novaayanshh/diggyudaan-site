@@ -58,9 +58,9 @@ export function Navbar() {
                     <Link
                       to={item.to}
                       className={cn(
-                        "flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium text-foreground/80 transition-colors hover:text-foreground",
-                        path.startsWith("/services") && "text-foreground",
-                      )}
+  "flex items-center gap-2 rounded-full px-5 py-2.5 text-[15px] font-semibold tracking-tight text-black/85 transition-all duration-300 hover:text-black",
+  path.startsWith("/services") && "text-black",
+)}
                     >
                       Services
                       <ChevronDown
@@ -127,14 +127,16 @@ export function Navbar() {
                   <Link
                     to={item.to}
                     className={cn(
-                      "relative rounded-full px-4 py-2 text-sm font-medium transition-colors",
-                      active ? "text-foreground" : "text-foreground/70 hover:text-foreground",
-                    )}
+  "relative rounded-full px-5 py-2.5 text-[15px] font-semibold tracking-tight transition-all duration-300",
+  active
+    ? "text-black"
+    : "text-black/85 hover:text-black",
+)}
                   >
                     {active && (
                       <motion.span
                         layoutId="nav-active"
-                        className="absolute inset-0 rounded-full bg-white/10"
+                        className="absolute inset-0 rounded-full bg-black/5"
                         transition={{ type: "spring", stiffness: 400, damping: 30 }}
                       />
                     )}
