@@ -1,0 +1,285 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   DigyUdaan Brand Design System
+   Colors extracted ONLY from the DigyUdaan logo:
+   - Deep indigo/navy background (logo bg)
+   - Primary cyan blue (DIGY text)
+   - Secondary gold (UDAAN + figure)
+   - White + tonal variants
+   ============================================================ */
+
+@theme inline {
+  /* Radii */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-3xl: 2.5rem;
+
+  /* Brand tokens -> Tailwind utilities */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-light: var(--secondary-light);
+  --color-secondary-dark: var(--secondary-dark);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Signature gradients (brand only) */
+  --gradient-hero: radial-gradient(
+      1200px 600px at 10% 10%,
+      color-mix(in oklab, var(--primary) 30%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at 90% 20%,
+      color-mix(in oklab, var(--secondary) 22%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      1000px 700px at 50% 100%,
+      color-mix(in oklab, var(--primary-dark) 60%, transparent),
+      transparent 70%
+    );
+
+  --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-light));
+  --gradient-gold: linear-gradient(135deg, var(--secondary), var(--secondary-light));
+  --gradient-brand: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--primary-light) 50%,
+    var(--secondary) 100%
+  );
+
+  --shadow-elegant: 0 20px 60px -20px color-mix(in oklab, var(--primary) 40%, transparent);
+  --shadow-gold: 0 20px 60px -20px color-mix(in oklab, var(--secondary) 45%, transparent);
+  --shadow-glass: 0 8px 32px 0 color-mix(in oklab, var(--primary-dark) 45%, transparent);
+}
+
+/* Light-first premium palette (soft airy) */
+:root {
+  --radius: 1rem;
+
+  /* Soft off-white canvas with faint indigo tint */
+  --background: oklch(0.985 0.006 250);
+  --foreground: oklch(0.22 0.08 285);
+
+  --surface: oklch(1 0 0);
+  --surface-2: oklch(0.97 0.012 250);
+
+  --card: oklch(1 0 0 / 0.75);
+  --card-foreground: oklch(0.22 0.08 285);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.08 285);
+
+  /* Cyan-blue from DIGY */
+  --primary: oklch(0.62 0.16 240);
+  --primary-foreground: oklch(0.99 0.005 250);
+  --primary-light: oklch(0.78 0.13 228);
+  --primary-dark: oklch(0.45 0.16 250);
+
+  /* Gold from UDAAN */
+  --secondary: oklch(0.78 0.16 78);
+  --secondary-foreground: oklch(0.22 0.08 285);
+  --secondary-light: oklch(0.88 0.12 85);
+  --secondary-dark: oklch(0.66 0.17 68);
+
+  --muted: oklch(0.95 0.012 250);
+  --muted-foreground: oklch(0.48 0.04 275);
+  --accent: oklch(0.62 0.16 240);
+  --accent-foreground: oklch(0.99 0.005 250);
+  --destructive: oklch(0.62 0.2 25);
+  --destructive-foreground: oklch(0.99 0.005 250);
+
+  --border: oklch(0.22 0.08 285 / 0.1);
+  --input: oklch(0.22 0.08 285 / 0.08);
+  --ring: oklch(0.62 0.16 240);
+}
+
+/* Dark mode retained */
+.dark {
+  --background: oklch(0.24 0.09 285);
+  --foreground: oklch(0.98 0.005 250);
+  --surface: oklch(0.28 0.09 285);
+  --surface-2: oklch(0.32 0.08 285);
+  --card: oklch(0.28 0.08 285 / 0.6);
+  --card-foreground: oklch(0.98 0.005 250);
+  --muted: oklch(0.32 0.06 285);
+  --muted-foreground: oklch(0.78 0.02 260);
+  --border: oklch(1 0 0 / 0.1);
+  --input: oklch(1 0 0 / 0.08);
+}
+
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    background-image: var(--gradient-hero);
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--secondary) 60%, transparent);
+    color: var(--foreground);
+  }
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in oklab, var(--primary) 50%, transparent);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+  }
+}
+
+/* ---------- Utilities ---------- */
+
+@utility glass {
+  background: color-mix(in oklab, var(--surface) 55%, transparent);
+  backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid color-mix(in oklab, var(--primary-light) 18%, transparent);
+  box-shadow: var(--shadow-glass);
+}
+
+@utility glass-strong {
+  background: color-mix(in oklab, var(--surface-2) 75%, transparent);
+  backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid color-mix(in oklab, var(--primary-light) 22%, transparent);
+}
+
+@utility text-gradient-brand {
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility text-gradient-gold {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility text-gradient-blue {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-noise {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+@utility glow-primary {
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--primary) 30%, transparent),
+    0 10px 40px -10px color-mix(in oklab, var(--primary) 60%, transparent),
+    0 0 80px -20px color-mix(in oklab, var(--primary) 40%, transparent);
+}
+
+@utility glow-gold {
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--secondary) 40%, transparent),
+    0 10px 40px -10px color-mix(in oklab, var(--secondary) 70%, transparent),
+    0 0 80px -20px color-mix(in oklab, var(--secondary) 50%, transparent);
+}
+
+@utility border-gradient {
+  position: relative;
+  background:
+    linear-gradient(var(--surface), var(--surface)) padding-box,
+    var(--gradient-brand) border-box;
+  border: 1px solid transparent;
+}
+
+/* Marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@utility animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+/* Slow spin */
+@keyframes slow-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@utility animate-slow-spin {
+  animation: slow-spin 20s linear infinite;
+}
+
+/* Float */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+@utility animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Grid pattern */
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in oklab, var(--primary-light) 10%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in oklab, var(--primary-light) 10%, transparent) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
