@@ -49,13 +49,41 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* Who We Are */}
+      <section className="py-16">
+        <div className="mx-auto max-w-5xl px-6">
+          <Reveal>
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
+              Who We Are
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-medium leading-tight md:text-4xl">
+              Your Trusted Partner for{" "}
+              <span className="text-gradient-brand">Digital Growth</span> &{" "}
+              <span className="text-gradient-gold">Business Success</span>.
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
+              At DiggyUdaan, we are more than just a digital marketing agency—we are your
+              strategic growth partner. We help businesses transform ideas into powerful digital
+              experiences through innovative marketing strategies, creative branding,
+              cutting-edge technology, and data-driven solutions.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+              Our mission is simple: to help businesses build a strong online presence, generate
+              quality leads, increase sales, and achieve sustainable growth. Whether you're a
+              startup, small business, or established enterprise, our team creates customized
+              strategies that deliver measurable results and long-term success.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
       {/* Vision / Mission / What we do */}
       <section className="py-16">
         <div className="mx-auto grid max-w-7xl gap-6 px-6 md:grid-cols-3">
           {[
             {
               icon: Users,
-              title: "Who We Are",
+              title: "What We Do",
               body: "We're for brands who dare to dream big, crave creativity and want lasting impact online. If you're ready to elevate your presence and leave a mark, we're here.",
             },
             {
