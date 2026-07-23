@@ -5,7 +5,7 @@ import { GlassCard } from "@/components/GlassCard";
 import { MagneticButton } from "@/components/MagneticButton";
 import { ProcessSection, WhyChooseUs, ContactCTA } from "@/components/sections/HomeSections";
 import { SITE } from "@/lib/site";
-import { Heart, Eye, Rocket, Users, Award, Clock, ShieldCheck, Zap, Cpu } from "lucide-react";
+import { Heart, Eye, Rocket, Users, Award, Clock, ShieldCheck, Zap, Cpu, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -77,13 +77,68 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* What We Do */}
+      <section className="py-16">
+        <div className="mx-auto max-w-5xl px-6">
+          <Reveal>
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
+              What We Do
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-medium leading-tight md:text-4xl">
+              Everything your brand needs to{" "}
+              <span className="text-gradient-brand">grow, online</span>.
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
+              We provide comprehensive digital marketing and branding services designed to help
+              businesses grow in today's competitive digital landscape.
+            </p>
+            <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-secondary">
+              Our expertise includes:
+            </p>
+          </Reveal>
+
+          <Stagger className="mt-6 grid gap-x-8 gap-y-3 sm:grid-cols-2">
+            {[
+              "Search Engine Optimization (SEO)",
+              "Google Ads (PPC)",
+              "Meta Ads (Facebook & Instagram)",
+              "Social Media Marketing",
+              "Website Design & Development",
+              "Performance Marketing",
+              "Graphic Design",
+              "Brand Identity Development",
+              "Video Production",
+              "Offline Marketing",
+              "AI Marketing Solutions",
+              "E-Commerce Marketing",
+            ].map((item) => (
+              <motion.div
+                key={item}
+                variants={staggerItem}
+                className="flex items-start gap-2.5 text-sm text-muted-foreground md:text-base"
+              >
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
+                <span>{item}</span>
+              </motion.div>
+            ))}
+          </Stagger>
+
+          <Reveal delay={0.15}>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground md:text-lg">
+              By combining creativity with analytics, we ensure every campaign delivers maximum
+              impact, stronger engagement, and measurable return on investment (ROI).
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
       {/* Vision / Mission / What we do */}
       <section className="py-16">
         <div className="mx-auto grid max-w-7xl gap-6 px-6 md:grid-cols-3">
           {[
             {
               icon: Users,
-              title: "What We Do",
+              title: "Our Approach",
               body: "We're for brands who dare to dream big, crave creativity and want lasting impact online. If you're ready to elevate your presence and leave a mark, we're here.",
             },
             {
