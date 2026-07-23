@@ -64,6 +64,7 @@ export const SERVICES: Service[] = [
     description:
       "Editorial calendars, community management and platform-native storytelling that grows real audiences — not vanity followers.",
     icon: Share2,
+    image: "/Social Media Marketing.png",
   },
   {
     slug: "ecommerce-marketing",
@@ -72,6 +73,7 @@ export const SERVICES: Service[] = [
     description:
       "Marketplace optimization, retention flows and conversion-focused campaigns that turn store traffic into repeat revenue.",
     icon: ShoppingBag,
+    image: "/Ecommerce.png",
   },
   {
     slug: "graphic-design",
@@ -80,6 +82,7 @@ export const SERVICES: Service[] = [
     description:
       "Studio-grade ad creatives, product catalogues and PDP assets designed to lift click-through and conversion across every channel.",
     icon: Image,
+    image: "/Graphic Design.png",
   },
   {
     slug: "video-production",
@@ -88,6 +91,7 @@ export const SERVICES: Service[] = [
     description:
       "Scroll-stopping video: performance UGC, brand films, product reels and hook-first ad creatives crafted in-house.",
     icon: Film,
+    image: "/Video Production.png",
   },
   {
     slug: "seo",
@@ -105,6 +109,7 @@ export const SERVICES: Service[] = [
     description:
       "High-converting Shopify stores and custom web builds. Blazing performance, 2%+ conversion rate baseline, and pixel-perfect execution.",
     icon: Code2,
+    image: "/Website Development.png",
   },
   {
     slug: "influencer-marketing",
@@ -129,6 +134,7 @@ export const SERVICES: Service[] = [
     description:
       "Out-of-home, print and on-ground activations that extend your brand's reach beyond the screen and into the real world.",
     icon: Radio,
+    image: "/Offline Marketing.png",
   },
 ];
 
