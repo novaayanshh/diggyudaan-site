@@ -247,14 +247,18 @@ export const FAQS = [
 ];
 
 export const CLIENTS = [
-  "Showshaa",
   "Agami",
   "Sumaya",
-  "House of Bloom",
-  "Kairo",
-  "Nova Kart",
-  "Vayu Wellness",
-  "Ember & Oak",
-  "Bindaas",
-  "Studio Neel",
+  "Showshaa",
+  "Mintree",
+  "Skiniss",
+  "Trulyganic",
+  "Corcul",
+  "Doselo Healthcare",
+  "Ayurmacy",
+  "Celestique",
+  "Lilsy Professional",
+  "Aumrit",
+  "Alpspure Nutra",
+  "Redo Herbs",
 ];
