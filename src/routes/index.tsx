@@ -3,6 +3,7 @@ import { Hero } from "@/components/sections/Hero";
 import { PromoBanner } from "@/components/sections/PromoBanner";
 import {
   ClientMarquee,
+  ClientLogosGrid,
   StatsSection,
   AboutPreview,
   WhyChooseUs,
@@ -25,6 +26,7 @@ function Index() {
       <Hero />
       <PromoBanner />
       <ClientMarquee />
+      <ClientLogosGrid />
       <StatsSection />
       <AboutPreview />
       <WhyChooseUs />
