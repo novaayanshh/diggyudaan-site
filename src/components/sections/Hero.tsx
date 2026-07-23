@@ -46,7 +46,7 @@ export function Hero() {
             </span>
           </motion.div>
 
-          <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.02] tracking-tight sm:text-6xl lg:text-[5.4rem]">
+          <h1 className="mt-6 font-display text-5xl font-medium leading-[1.05] tracking-normal sm:text-6xl lg:text-[5.4rem]">
             {"Transform Your".split(" ").map((w, i) => (
               <motion.span
                 key={i}
