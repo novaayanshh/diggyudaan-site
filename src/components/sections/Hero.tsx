@@ -35,19 +35,19 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 rounded-full glass px-4 py-2 text-xs font-medium"
+            className="inline-flex flex-wrap items-center gap-2 rounded-full glass px-4 py-2 text-xs font-medium"
           >
-            <span className="relative flex h-2 w-2">
+            <span className="relative flex h-2 w-2 shrink-0">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-secondary" />
             </span>
             <span className="text-muted-foreground">
-              Over <span className="text-foreground font-semibold">300+ founders</span> served in 5 years
+              SEO • Performance Marketing • Branding • Web Development • Creative Solutions
             </span>
           </motion.div>
 
           <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.02] tracking-tight sm:text-6xl lg:text-[5.4rem]">
-            {"Your D2C".split(" ").map((w, i) => (
+            {"Transform Your".split(" ").map((w, i) => (
               <motion.span
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
@@ -62,23 +62,33 @@ export function Hero() {
             <motion.span
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.35, duration: 0.8 }}
+              transition={{ delay: 0.3, duration: 0.7 }}
+              className="mr-3 inline-block"
+            >
+              Brand.
+            </motion.span>
+            <br />
+            <motion.span
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.45, duration: 0.8 }}
               className="inline-block text-gradient-brand"
             >
-              Growth Partner.
+              Accelerate Growth.
             </motion.span>
           </h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.7 }}
+            transition={{ delay: 0.6, duration: 0.7 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg"
           >
-            We help first-generation founders go from{" "}
-            <span className="text-foreground font-medium">zero sales</span> to{" "}
-            <span className="text-secondary font-semibold">100+ orders in 30 days</span> — brand
-            strategy to performance marketing, all under one roof.
+            From SEO and Performance Marketing to Creative Branding, Web Development, AI
+            Marketing, and Video Production — we help ambitious businesses{" "}
+            <span className="text-foreground font-medium">generate more leads</span>,{" "}
+            <span className="text-secondary font-semibold">increase conversions</span>, and
+            achieve sustainable growth with data-driven digital strategies.
           </motion.p>
 
           <motion.div
@@ -88,10 +98,10 @@ export function Hero() {
             className="mt-8 flex flex-wrap items-center gap-3"
           >
             <MagneticButton href={SITE.whatsapp} variant="gold" size="lg">
-              Get FREE Marketing Audit
+              Get Started Today
             </MagneticButton>
-            <MagneticButton href="/services" variant="outline" size="lg" showArrow={false}>
-              Explore Services <ArrowRight className="h-4 w-4" />
+            <MagneticButton href="/contact" variant="outline" size="lg" showArrow={false}>
+              Talk to Our Experts <ArrowRight className="h-4 w-4" />
             </MagneticButton>
           </motion.div>
 
@@ -99,37 +109,33 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9 }}
-            className="mt-10 flex flex-wrap items-center gap-6 text-xs text-muted-foreground"
+            className="mt-10 grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-4"
           >
-            <div className="flex items-center gap-2">
-              <div className="flex -space-x-2">
-                {[0, 1, 2, 3].map((i) => (
-                  <div
-                    key={i}
-                    className="h-7 w-7 rounded-full border-2 border-background"
-                    style={{
-                      background:
-                        i % 2 === 0
-                          ? "linear-gradient(135deg, var(--primary), var(--primary-light))"
-                          : "linear-gradient(135deg, var(--secondary), var(--secondary-light))",
-                    }}
-                  />
-                ))}
+            {[
+              { value: "250+", label: "Projects Delivered" },
+              { value: "120+", label: "Happy Clients" },
+              { value: "8+", label: "Digital Services" },
+              { value: "98%", label: "Client Satisfaction" },
+            ].map((s) => (
+              <div key={s.label}>
+                <div className="font-display text-2xl font-bold text-gradient-brand sm:text-3xl">
+                  {s.value}
+                </div>
+                <div className="mt-0.5 text-xs text-muted-foreground">{s.label}</div>
               </div>
-              <span>
-                <span className="text-foreground font-semibold">188+</span> founders trust us
-              </span>
-            </div>
-            <div className="h-4 w-px bg-foreground/15" />
-            <div className="flex items-center gap-1.5">
-              {"★★★★★".split("").map((s, i) => (
-                <span key={i} className="text-secondary">
-                  {s}
-                </span>
-              ))}
-              <span className="ml-1">4.9 rating</span>
-            </div>
+            ))}
           </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.05 }}
+            className="mt-8 max-w-xl text-xs leading-relaxed text-muted-foreground/80"
+          >
+            Trusted by startups, local businesses, D2C brands, and growing enterprises across
+            India to deliver measurable business growth through creative marketing and
+            technology.
+          </motion.p>
         </div>
 
         {/* Right visual */}
@@ -174,9 +180,9 @@ function HeroVisual() {
         <div className="absolute inset-10 rounded-full bg-gradient-to-br from-primary/30 via-primary-light/20 to-secondary/30 blur-2xl" />
         <div className="absolute inset-16 flex items-center justify-center rounded-full glass-strong">
           <div className="text-center">
-            <div className="text-gradient-gold font-display text-5xl font-bold">100+</div>
+            <div className="text-gradient-gold font-display text-3xl font-bold">DigyUdaan</div>
             <div className="mt-1 text-[10px] uppercase tracking-[0.24em] text-muted-foreground">
-              Orders / 30 days
+              Let's Fly Together
             </div>
           </div>
         </div>
@@ -187,32 +193,32 @@ function HeroVisual() {
         className="left-0 top-6"
         delay={0.6}
         icon={<TrendingUp className="h-4 w-4" />}
-        title="ROAS"
-        value="4.8x"
+        title="Projects"
+        value="250+"
         accent="primary"
       />
       <FloatCard
         className="right-0 top-24"
         delay={0.8}
-        icon={<Zap className="h-4 w-4" />}
-        title="Conv. Rate"
-        value="3.4%"
+        icon={<Users className="h-4 w-4" />}
+        title="Happy Clients"
+        value="120+"
         accent="gold"
       />
       <FloatCard
         className="right-4 bottom-16"
         delay={1.0}
-        icon={<Users className="h-4 w-4" />}
-        title="Founders"
-        value="300+"
+        icon={<Zap className="h-4 w-4" />}
+        title="Services"
+        value="8+"
         accent="primary"
       />
       <FloatCard
         className="left-2 bottom-6"
         delay={1.2}
         icon={<Sparkles className="h-4 w-4" />}
-        title="In-House"
-        value="100%"
+        title="Satisfaction"
+        value="98%"
         accent="gold"
       />
     </div>
