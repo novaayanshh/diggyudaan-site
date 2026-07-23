@@ -43,6 +43,33 @@ function SuccessPage() {
         </div>
       </section>
 
+      {/* Our Story */}
+      <section className="py-16">
+        <div className="mx-auto max-w-5xl px-6">
+          <Reveal>
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
+              Our Story
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-semibold leading-tight md:text-4xl">
+              Built to give every business a{" "}
+              <span className="text-gradient-brand">strategy of its own</span>.
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
+              Founded with a vision to empower businesses in the digital era, DiggyUdaan combines
+              creativity, technology, and performance marketing to deliver impactful solutions. We
+              understand that every business has unique goals, challenges, and audiences. That's
+              why we don't believe in one-size-fits-all strategies.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+              Instead, we take the time to understand your business, analyze your market, and
+              craft personalized digital marketing campaigns that align with your objectives. From
+              increasing brand awareness to driving conversions, every strategy we build is
+              focused on delivering real business outcomes.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
       {/* Big metrics */}
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-6">
