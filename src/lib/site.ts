@@ -56,6 +56,7 @@ export const SERVICES: Service[] = [
     description:
       "ROAS-obsessed paid media across Meta, Google Search, Shopping and YouTube. Creative testing and audience laddering built to scale profitably.",
     icon: Target,
+    image: "/Performance Marketing.png",
   },
   {
     slug: "social-media-management",
@@ -118,6 +119,7 @@ export const SERVICES: Service[] = [
     description:
       "Vetted creator networks, whitelisted ads and performance-tracked partnerships that turn reach into revenue.",
     icon: UserPlus,
+    image: "/Influencer Growth.png",
   },
   {
     slug: "brand-management",
@@ -126,6 +128,7 @@ export const SERVICES: Service[] = [
     description:
       "Positioning, identity systems, guidelines and the ongoing brand governance that keeps you consistent as you scale.",
     icon: Crown,
+    image: "/Brand Management.png",
   },
   {
     slug: "offline-marketing",
