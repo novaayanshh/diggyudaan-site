@@ -82,27 +82,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         title:
-          "DigyUdaan Media House — Your D2C Growth Partner | 0 to 100+ Orders in 30 Days",
+          "Digital Marketing Agency in Greater Noida | SEO, Google Ads & Branding | DigyUdaan Media House",
       },
       {
         name: "description",
         content:
-          "DigyUdaan Media House is a premium D2C growth agency: Meta Ads, Google Ads, SEO, Shopify, video, content and brand — all in-house. From zero sales to 100+ orders in 30 days.",
+          "DigyUdaan Media House is a full-service digital marketing agency offering SEO, Google Ads, Meta Ads, Social Media Marketing, Website Development, Branding, Performance Marketing, Ecommerce Marketing and Video Production to help D2C brands grow online — 0 to 100+ orders in 30 days, 100% in-house.",
       },
       { name: "author", content: "DigyUdaan Media House" },
       {
         name: "keywords",
         content:
-          "DigyUdaan, D2C marketing agency, performance marketing, Shopify agency India, Meta ads, Google ads, brand strategy, Greater Noida",
+          "Digital Marketing Agency, SEO Company, Google Ads Agency, Meta Ads, Social Media Marketing, Website Development, Brand Identity Development, Brand Management, Performance Marketing, Ecommerce Marketing, Video Production, D2C Marketing Agency, Shopify Agency India, Greater Noida",
       },
       {
         property: "og:title",
-        content: "DigyUdaan Media House — Your D2C Growth Partner",
+        content:
+          "Digital Marketing Agency in Greater Noida | SEO, Google Ads & Branding | DigyUdaan Media House",
       },
       {
         property: "og:description",
         content:
-          "Zero to 100+ orders in 30 days. Brand strategy to performance marketing — under one roof.",
+          "Full-service digital marketing agency: SEO, Google Ads, Meta Ads, Social Media Marketing, Website Development, Branding, Performance Marketing, Ecommerce Marketing and Video Production — all in-house, under one roof.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

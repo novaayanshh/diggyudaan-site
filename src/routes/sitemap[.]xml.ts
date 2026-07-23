@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
+import { SERVICE_PAGE_LIST } from "@/lib/servicePages";
 
 const BASE_URL = "";
 
@@ -13,6 +14,11 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/services", priority: "0.9", changefreq: "weekly" as const },
           { path: "/success-story", priority: "0.8", changefreq: "monthly" as const },
           { path: "/contact", priority: "0.7", changefreq: "monthly" as const },
+          ...SERVICE_PAGE_LIST.map((s) => ({
+            path: s.path,
+            priority: "0.85",
+            changefreq: "monthly" as const,
+          })),
         ];
         const urls = entries
           .map(

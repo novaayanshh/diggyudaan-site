@@ -10,15 +10,41 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ServiceSlugRouteImport } from './routes/$serviceSlug'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as AiMarketingServicesRouteImport } from './routes/ai-marketing-services'
+import { Route as BrandIdentityDevelopmentRouteImport } from './routes/brand-identity-development'
+import { Route as BrandManagementRouteImport } from './routes/brand-management'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ContentMarketingServicesRouteImport } from './routes/content-marketing-services'
+import { Route as CreativeStrategyRouteImport } from './routes/creative-strategy'
+import { Route as EcommerceMarketingServicesRouteImport } from './routes/ecommerce-marketing-services'
+import { Route as EmailMarketingServicesRouteImport } from './routes/email-marketing-services'
+import { Route as GoogleAdsServicesRouteImport } from './routes/google-ads-services'
+import { Route as GraphicDesignServicesRouteImport } from './routes/graphic-design-services'
+import { Route as InfluencerMarketingServicesRouteImport } from './routes/influencer-marketing-services'
+import { Route as LeadGenerationServicesRouteImport } from './routes/lead-generation-services'
+import { Route as LocalSeoServicesRouteImport } from './routes/local-seo-services'
+import { Route as MarketplaceMarketingRouteImport } from './routes/marketplace-marketing'
+import { Route as MetaAdsServicesRouteImport } from './routes/meta-ads-services'
+import { Route as OfflineMarketingServicesRouteImport } from './routes/offline-marketing-services'
+import { Route as PerformanceMarketingRouteImport } from './routes/performance-marketing'
+import { Route as SeoServicesRouteImport } from './routes/seo-services'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SocialMediaMarketingRouteImport } from './routes/social-media-marketing'
 import { Route as SuccessStoryRouteImport } from './routes/success-story'
+import { Route as VideoProductionServicesRouteImport } from './routes/video-production-services'
+import { Route as WebsiteDevelopmentRouteImport } from './routes/website-development'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServiceSlugRoute = ServiceSlugRouteImport.update({
+  id: '/$serviceSlug',
+  path: '/$serviceSlug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -26,9 +52,99 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AiMarketingServicesRoute = AiMarketingServicesRouteImport.update({
+  id: '/ai-marketing-services',
+  path: '/ai-marketing-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BrandIdentityDevelopmentRoute =
+  BrandIdentityDevelopmentRouteImport.update({
+    id: '/brand-identity-development',
+    path: '/brand-identity-development',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BrandManagementRoute = BrandManagementRouteImport.update({
+  id: '/brand-management',
+  path: '/brand-management',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContentMarketingServicesRoute =
+  ContentMarketingServicesRouteImport.update({
+    id: '/content-marketing-services',
+    path: '/content-marketing-services',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CreativeStrategyRoute = CreativeStrategyRouteImport.update({
+  id: '/creative-strategy',
+  path: '/creative-strategy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EcommerceMarketingServicesRoute =
+  EcommerceMarketingServicesRouteImport.update({
+    id: '/ecommerce-marketing-services',
+    path: '/ecommerce-marketing-services',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EmailMarketingServicesRoute = EmailMarketingServicesRouteImport.update({
+  id: '/email-marketing-services',
+  path: '/email-marketing-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GoogleAdsServicesRoute = GoogleAdsServicesRouteImport.update({
+  id: '/google-ads-services',
+  path: '/google-ads-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GraphicDesignServicesRoute = GraphicDesignServicesRouteImport.update({
+  id: '/graphic-design-services',
+  path: '/graphic-design-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InfluencerMarketingServicesRoute =
+  InfluencerMarketingServicesRouteImport.update({
+    id: '/influencer-marketing-services',
+    path: '/influencer-marketing-services',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LeadGenerationServicesRoute = LeadGenerationServicesRouteImport.update({
+  id: '/lead-generation-services',
+  path: '/lead-generation-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LocalSeoServicesRoute = LocalSeoServicesRouteImport.update({
+  id: '/local-seo-services',
+  path: '/local-seo-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MarketplaceMarketingRoute = MarketplaceMarketingRouteImport.update({
+  id: '/marketplace-marketing',
+  path: '/marketplace-marketing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MetaAdsServicesRoute = MetaAdsServicesRouteImport.update({
+  id: '/meta-ads-services',
+  path: '/meta-ads-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OfflineMarketingServicesRoute =
+  OfflineMarketingServicesRouteImport.update({
+    id: '/offline-marketing-services',
+    path: '/offline-marketing-services',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PerformanceMarketingRoute = PerformanceMarketingRouteImport.update({
+  id: '/performance-marketing',
+  path: '/performance-marketing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SeoServicesRoute = SeoServicesRouteImport.update({
+  id: '/seo-services',
+  path: '/seo-services',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesRoute = ServicesRouteImport.update({
@@ -41,71 +157,233 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SocialMediaMarketingRoute = SocialMediaMarketingRouteImport.update({
+  id: '/social-media-marketing',
+  path: '/social-media-marketing',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SuccessStoryRoute = SuccessStoryRouteImport.update({
   id: '/success-story',
   path: '/success-story',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VideoProductionServicesRoute = VideoProductionServicesRouteImport.update({
+  id: '/video-production-services',
+  path: '/video-production-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WebsiteDevelopmentRoute = WebsiteDevelopmentRouteImport.update({
+  id: '/website-development',
+  path: '/website-development',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/$serviceSlug': typeof ServiceSlugRoute
   '/about': typeof AboutRoute
+  '/ai-marketing-services': typeof AiMarketingServicesRoute
+  '/brand-identity-development': typeof BrandIdentityDevelopmentRoute
+  '/brand-management': typeof BrandManagementRoute
   '/contact': typeof ContactRoute
+  '/content-marketing-services': typeof ContentMarketingServicesRoute
+  '/creative-strategy': typeof CreativeStrategyRoute
+  '/ecommerce-marketing-services': typeof EcommerceMarketingServicesRoute
+  '/email-marketing-services': typeof EmailMarketingServicesRoute
+  '/google-ads-services': typeof GoogleAdsServicesRoute
+  '/graphic-design-services': typeof GraphicDesignServicesRoute
+  '/influencer-marketing-services': typeof InfluencerMarketingServicesRoute
+  '/lead-generation-services': typeof LeadGenerationServicesRoute
+  '/local-seo-services': typeof LocalSeoServicesRoute
+  '/marketplace-marketing': typeof MarketplaceMarketingRoute
+  '/meta-ads-services': typeof MetaAdsServicesRoute
+  '/offline-marketing-services': typeof OfflineMarketingServicesRoute
+  '/performance-marketing': typeof PerformanceMarketingRoute
+  '/seo-services': typeof SeoServicesRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/social-media-marketing': typeof SocialMediaMarketingRoute
   '/success-story': typeof SuccessStoryRoute
+  '/video-production-services': typeof VideoProductionServicesRoute
+  '/website-development': typeof WebsiteDevelopmentRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/$serviceSlug': typeof ServiceSlugRoute
   '/about': typeof AboutRoute
+  '/ai-marketing-services': typeof AiMarketingServicesRoute
+  '/brand-identity-development': typeof BrandIdentityDevelopmentRoute
+  '/brand-management': typeof BrandManagementRoute
   '/contact': typeof ContactRoute
+  '/content-marketing-services': typeof ContentMarketingServicesRoute
+  '/creative-strategy': typeof CreativeStrategyRoute
+  '/ecommerce-marketing-services': typeof EcommerceMarketingServicesRoute
+  '/email-marketing-services': typeof EmailMarketingServicesRoute
+  '/google-ads-services': typeof GoogleAdsServicesRoute
+  '/graphic-design-services': typeof GraphicDesignServicesRoute
+  '/influencer-marketing-services': typeof InfluencerMarketingServicesRoute
+  '/lead-generation-services': typeof LeadGenerationServicesRoute
+  '/local-seo-services': typeof LocalSeoServicesRoute
+  '/marketplace-marketing': typeof MarketplaceMarketingRoute
+  '/meta-ads-services': typeof MetaAdsServicesRoute
+  '/offline-marketing-services': typeof OfflineMarketingServicesRoute
+  '/performance-marketing': typeof PerformanceMarketingRoute
+  '/seo-services': typeof SeoServicesRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/social-media-marketing': typeof SocialMediaMarketingRoute
   '/success-story': typeof SuccessStoryRoute
+  '/video-production-services': typeof VideoProductionServicesRoute
+  '/website-development': typeof WebsiteDevelopmentRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/$serviceSlug': typeof ServiceSlugRoute
   '/about': typeof AboutRoute
+  '/ai-marketing-services': typeof AiMarketingServicesRoute
+  '/brand-identity-development': typeof BrandIdentityDevelopmentRoute
+  '/brand-management': typeof BrandManagementRoute
   '/contact': typeof ContactRoute
+  '/content-marketing-services': typeof ContentMarketingServicesRoute
+  '/creative-strategy': typeof CreativeStrategyRoute
+  '/ecommerce-marketing-services': typeof EcommerceMarketingServicesRoute
+  '/email-marketing-services': typeof EmailMarketingServicesRoute
+  '/google-ads-services': typeof GoogleAdsServicesRoute
+  '/graphic-design-services': typeof GraphicDesignServicesRoute
+  '/influencer-marketing-services': typeof InfluencerMarketingServicesRoute
+  '/lead-generation-services': typeof LeadGenerationServicesRoute
+  '/local-seo-services': typeof LocalSeoServicesRoute
+  '/marketplace-marketing': typeof MarketplaceMarketingRoute
+  '/meta-ads-services': typeof MetaAdsServicesRoute
+  '/offline-marketing-services': typeof OfflineMarketingServicesRoute
+  '/performance-marketing': typeof PerformanceMarketingRoute
+  '/seo-services': typeof SeoServicesRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/social-media-marketing': typeof SocialMediaMarketingRoute
   '/success-story': typeof SuccessStoryRoute
+  '/video-production-services': typeof VideoProductionServicesRoute
+  '/website-development': typeof WebsiteDevelopmentRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/$serviceSlug'
     | '/about'
+    | '/ai-marketing-services'
+    | '/brand-identity-development'
+    | '/brand-management'
     | '/contact'
+    | '/content-marketing-services'
+    | '/creative-strategy'
+    | '/ecommerce-marketing-services'
+    | '/email-marketing-services'
+    | '/google-ads-services'
+    | '/graphic-design-services'
+    | '/influencer-marketing-services'
+    | '/lead-generation-services'
+    | '/local-seo-services'
+    | '/marketplace-marketing'
+    | '/meta-ads-services'
+    | '/offline-marketing-services'
+    | '/performance-marketing'
+    | '/seo-services'
     | '/services'
     | '/sitemap.xml'
+    | '/social-media-marketing'
     | '/success-story'
+    | '/video-production-services'
+    | '/website-development'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/$serviceSlug'
     | '/about'
+    | '/ai-marketing-services'
+    | '/brand-identity-development'
+    | '/brand-management'
     | '/contact'
+    | '/content-marketing-services'
+    | '/creative-strategy'
+    | '/ecommerce-marketing-services'
+    | '/email-marketing-services'
+    | '/google-ads-services'
+    | '/graphic-design-services'
+    | '/influencer-marketing-services'
+    | '/lead-generation-services'
+    | '/local-seo-services'
+    | '/marketplace-marketing'
+    | '/meta-ads-services'
+    | '/offline-marketing-services'
+    | '/performance-marketing'
+    | '/seo-services'
     | '/services'
     | '/sitemap.xml'
+    | '/social-media-marketing'
     | '/success-story'
+    | '/video-production-services'
+    | '/website-development'
   id:
     | '__root__'
     | '/'
+    | '/$serviceSlug'
     | '/about'
+    | '/ai-marketing-services'
+    | '/brand-identity-development'
+    | '/brand-management'
     | '/contact'
+    | '/content-marketing-services'
+    | '/creative-strategy'
+    | '/ecommerce-marketing-services'
+    | '/email-marketing-services'
+    | '/google-ads-services'
+    | '/graphic-design-services'
+    | '/influencer-marketing-services'
+    | '/lead-generation-services'
+    | '/local-seo-services'
+    | '/marketplace-marketing'
+    | '/meta-ads-services'
+    | '/offline-marketing-services'
+    | '/performance-marketing'
+    | '/seo-services'
     | '/services'
     | '/sitemap.xml'
+    | '/social-media-marketing'
     | '/success-story'
+    | '/video-production-services'
+    | '/website-development'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ServiceSlugRoute: typeof ServiceSlugRoute
   AboutRoute: typeof AboutRoute
+  AiMarketingServicesRoute: typeof AiMarketingServicesRoute
+  BrandIdentityDevelopmentRoute: typeof BrandIdentityDevelopmentRoute
+  BrandManagementRoute: typeof BrandManagementRoute
   ContactRoute: typeof ContactRoute
+  ContentMarketingServicesRoute: typeof ContentMarketingServicesRoute
+  CreativeStrategyRoute: typeof CreativeStrategyRoute
+  EcommerceMarketingServicesRoute: typeof EcommerceMarketingServicesRoute
+  EmailMarketingServicesRoute: typeof EmailMarketingServicesRoute
+  GoogleAdsServicesRoute: typeof GoogleAdsServicesRoute
+  GraphicDesignServicesRoute: typeof GraphicDesignServicesRoute
+  InfluencerMarketingServicesRoute: typeof InfluencerMarketingServicesRoute
+  LeadGenerationServicesRoute: typeof LeadGenerationServicesRoute
+  LocalSeoServicesRoute: typeof LocalSeoServicesRoute
+  MarketplaceMarketingRoute: typeof MarketplaceMarketingRoute
+  MetaAdsServicesRoute: typeof MetaAdsServicesRoute
+  OfflineMarketingServicesRoute: typeof OfflineMarketingServicesRoute
+  PerformanceMarketingRoute: typeof PerformanceMarketingRoute
+  SeoServicesRoute: typeof SeoServicesRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SocialMediaMarketingRoute: typeof SocialMediaMarketingRoute
   SuccessStoryRoute: typeof SuccessStoryRoute
+  VideoProductionServicesRoute: typeof VideoProductionServicesRoute
+  WebsiteDevelopmentRoute: typeof WebsiteDevelopmentRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -117,6 +395,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/$serviceSlug': {
+      id: '/$serviceSlug'
+      path: '/$serviceSlug'
+      fullPath: '/$serviceSlug'
+      preLoaderRoute: typeof ServiceSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -124,11 +409,130 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ai-marketing-services': {
+      id: '/ai-marketing-services'
+      path: '/ai-marketing-services'
+      fullPath: '/ai-marketing-services'
+      preLoaderRoute: typeof AiMarketingServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/brand-identity-development': {
+      id: '/brand-identity-development'
+      path: '/brand-identity-development'
+      fullPath: '/brand-identity-development'
+      preLoaderRoute: typeof BrandIdentityDevelopmentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/brand-management': {
+      id: '/brand-management'
+      path: '/brand-management'
+      fullPath: '/brand-management'
+      preLoaderRoute: typeof BrandManagementRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/content-marketing-services': {
+      id: '/content-marketing-services'
+      path: '/content-marketing-services'
+      fullPath: '/content-marketing-services'
+      preLoaderRoute: typeof ContentMarketingServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/creative-strategy': {
+      id: '/creative-strategy'
+      path: '/creative-strategy'
+      fullPath: '/creative-strategy'
+      preLoaderRoute: typeof CreativeStrategyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ecommerce-marketing-services': {
+      id: '/ecommerce-marketing-services'
+      path: '/ecommerce-marketing-services'
+      fullPath: '/ecommerce-marketing-services'
+      preLoaderRoute: typeof EcommerceMarketingServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/email-marketing-services': {
+      id: '/email-marketing-services'
+      path: '/email-marketing-services'
+      fullPath: '/email-marketing-services'
+      preLoaderRoute: typeof EmailMarketingServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/google-ads-services': {
+      id: '/google-ads-services'
+      path: '/google-ads-services'
+      fullPath: '/google-ads-services'
+      preLoaderRoute: typeof GoogleAdsServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/graphic-design-services': {
+      id: '/graphic-design-services'
+      path: '/graphic-design-services'
+      fullPath: '/graphic-design-services'
+      preLoaderRoute: typeof GraphicDesignServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/influencer-marketing-services': {
+      id: '/influencer-marketing-services'
+      path: '/influencer-marketing-services'
+      fullPath: '/influencer-marketing-services'
+      preLoaderRoute: typeof InfluencerMarketingServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lead-generation-services': {
+      id: '/lead-generation-services'
+      path: '/lead-generation-services'
+      fullPath: '/lead-generation-services'
+      preLoaderRoute: typeof LeadGenerationServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/local-seo-services': {
+      id: '/local-seo-services'
+      path: '/local-seo-services'
+      fullPath: '/local-seo-services'
+      preLoaderRoute: typeof LocalSeoServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/marketplace-marketing': {
+      id: '/marketplace-marketing'
+      path: '/marketplace-marketing'
+      fullPath: '/marketplace-marketing'
+      preLoaderRoute: typeof MarketplaceMarketingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/meta-ads-services': {
+      id: '/meta-ads-services'
+      path: '/meta-ads-services'
+      fullPath: '/meta-ads-services'
+      preLoaderRoute: typeof MetaAdsServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/offline-marketing-services': {
+      id: '/offline-marketing-services'
+      path: '/offline-marketing-services'
+      fullPath: '/offline-marketing-services'
+      preLoaderRoute: typeof OfflineMarketingServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/performance-marketing': {
+      id: '/performance-marketing'
+      path: '/performance-marketing'
+      fullPath: '/performance-marketing'
+      preLoaderRoute: typeof PerformanceMarketingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/seo-services': {
+      id: '/seo-services'
+      path: '/seo-services'
+      fullPath: '/seo-services'
+      preLoaderRoute: typeof SeoServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services': {
@@ -145,6 +549,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/social-media-marketing': {
+      id: '/social-media-marketing'
+      path: '/social-media-marketing'
+      fullPath: '/social-media-marketing'
+      preLoaderRoute: typeof SocialMediaMarketingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/success-story': {
       id: '/success-story'
       path: '/success-story'
@@ -152,16 +563,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SuccessStoryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/video-production-services': {
+      id: '/video-production-services'
+      path: '/video-production-services'
+      fullPath: '/video-production-services'
+      preLoaderRoute: typeof VideoProductionServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/website-development': {
+      id: '/website-development'
+      path: '/website-development'
+      fullPath: '/website-development'
+      preLoaderRoute: typeof WebsiteDevelopmentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ServiceSlugRoute: ServiceSlugRoute,
   AboutRoute: AboutRoute,
+  AiMarketingServicesRoute: AiMarketingServicesRoute,
+  BrandIdentityDevelopmentRoute: BrandIdentityDevelopmentRoute,
+  BrandManagementRoute: BrandManagementRoute,
   ContactRoute: ContactRoute,
+  ContentMarketingServicesRoute: ContentMarketingServicesRoute,
+  CreativeStrategyRoute: CreativeStrategyRoute,
+  EcommerceMarketingServicesRoute: EcommerceMarketingServicesRoute,
+  EmailMarketingServicesRoute: EmailMarketingServicesRoute,
+  GoogleAdsServicesRoute: GoogleAdsServicesRoute,
+  GraphicDesignServicesRoute: GraphicDesignServicesRoute,
+  InfluencerMarketingServicesRoute: InfluencerMarketingServicesRoute,
+  LeadGenerationServicesRoute: LeadGenerationServicesRoute,
+  LocalSeoServicesRoute: LocalSeoServicesRoute,
+  MarketplaceMarketingRoute: MarketplaceMarketingRoute,
+  MetaAdsServicesRoute: MetaAdsServicesRoute,
+  OfflineMarketingServicesRoute: OfflineMarketingServicesRoute,
+  PerformanceMarketingRoute: PerformanceMarketingRoute,
+  SeoServicesRoute: SeoServicesRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SocialMediaMarketingRoute: SocialMediaMarketingRoute,
   SuccessStoryRoute: SuccessStoryRoute,
+  VideoProductionServicesRoute: VideoProductionServicesRoute,
+  WebsiteDevelopmentRoute: WebsiteDevelopmentRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

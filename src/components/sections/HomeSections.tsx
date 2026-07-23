@@ -239,7 +239,7 @@ export function ServicesGrid({ compact = false }: { compact?: boolean }) {
                   <div className="-mx-6 -mt-6 mb-5 overflow-hidden rounded-t-2xl">
                     <img
                       src={s.image}
-                      alt={s.title}
+                      alt={s.alt ?? s.title}
                       className="h-40 w-full object-cover"
                       loading="lazy"
                     />
@@ -253,10 +253,10 @@ export function ServicesGrid({ compact = false }: { compact?: boolean }) {
                   {s.description}
                 </p>
                 <Link
-                  to="/contact"
+                  to={s.path ?? "/contact"}
                   className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-secondary"
                 >
-                  Start a project
+                  {s.path ? "Learn more" : "Start a project"}
                   <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </Link>
               </GlassCard>

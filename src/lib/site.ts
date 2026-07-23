@@ -37,6 +37,9 @@ export type Service = {
   description: string;
   icon: typeof Search;
   image?: string;
+  alt?: string;
+  /** Link to the dedicated SEO landing page for this service, if one exists */
+  path?: string;
 };
 
 export const SERVICES: Service[] = [
@@ -48,6 +51,8 @@ export const SERVICES: Service[] = [
       "Develop a memorable brand with strategic logo design, typography, color systems, visual guidelines, and complete branding solutions.",
     icon: Palette,
     image: "/Brand Identity Develeopment.png",
+    alt: "Brand Identity Development Services",
+    path: "/brand-identity-development",
   },
   {
     slug: "performance-marketing",
@@ -56,7 +61,9 @@ export const SERVICES: Service[] = [
     description:
       "ROAS-obsessed paid media across Meta, Google Search, Shopping and YouTube. Creative testing and audience laddering built to scale profitably.",
     icon: Target,
-    image: "/Performance Marketing.png",
+    image: "/performance-marketing.png",
+    alt: "Performance Marketing Services",
+    path: "/performance-marketing",
   },
   {
     slug: "social-media-management",
@@ -66,6 +73,8 @@ export const SERVICES: Service[] = [
       "Editorial calendars, community management and platform-native storytelling that grows real audiences — not vanity followers.",
     icon: Share2,
     image: "/Social Media Marketing.png",
+    alt: "Social Media Marketing Services",
+    path: "/social-media-marketing",
   },
   {
     slug: "ecommerce-marketing",
@@ -75,6 +84,8 @@ export const SERVICES: Service[] = [
       "Marketplace optimization, retention flows and conversion-focused campaigns that turn store traffic into repeat revenue.",
     icon: ShoppingBag,
     image: "/Ecommerce.png",
+    alt: "E-Commerce Marketing Services",
+    path: "/ecommerce-marketing-services",
   },
   {
     slug: "graphic-design",
@@ -84,6 +95,8 @@ export const SERVICES: Service[] = [
       "Studio-grade ad creatives, product catalogues and PDP assets designed to lift click-through and conversion across every channel.",
     icon: Image,
     image: "/Graphic Design.png",
+    alt: "Creative Graphic Design Services",
+    path: "/graphic-design-services",
   },
   {
     slug: "video-production",
@@ -93,6 +106,8 @@ export const SERVICES: Service[] = [
       "Scroll-stopping video: performance UGC, brand films, product reels and hook-first ad creatives crafted in-house.",
     icon: Film,
     image: "/Video Production.png",
+    alt: "Professional Video Production Services",
+    path: "/video-production-services",
   },
   {
     slug: "seo",
@@ -102,6 +117,8 @@ export const SERVICES: Service[] = [
       "Improve your website's visibility on search engines with technical SEO, on-page optimization, keyword research, and link-building strategies that drive long-term organic traffic.",
     icon: Search,
     image: "/SEO.png",
+    alt: "Professional SEO Services for Business Growth",
+    path: "/seo-services",
   },
   {
     slug: "website-development",
@@ -111,6 +128,8 @@ export const SERVICES: Service[] = [
       "High-converting Shopify stores and custom web builds. Blazing performance, 2%+ conversion rate baseline, and pixel-perfect execution.",
     icon: Code2,
     image: "/Website Development.png",
+    alt: "Professional Website Development Services",
+    path: "/website-development",
   },
   {
     slug: "influencer-marketing",
@@ -119,7 +138,9 @@ export const SERVICES: Service[] = [
     description:
       "Vetted creator networks, whitelisted ads and performance-tracked partnerships that turn reach into revenue.",
     icon: UserPlus,
-    image: "/Influencer Growth.png",
+    image: "/influencer-marketing.png",
+    alt: "Influencer Marketing Services",
+    path: "/influencer-marketing-services",
   },
   {
     slug: "brand-management",
@@ -128,7 +149,9 @@ export const SERVICES: Service[] = [
     description:
       "Positioning, identity systems, guidelines and the ongoing brand governance that keeps you consistent as you scale.",
     icon: Crown,
-    image: "/Brand Management.png",
+    image: "/brand-management.png",
+    alt: "Professional Brand Management Services",
+    path: "/brand-management",
   },
   {
     slug: "offline-marketing",
@@ -138,6 +161,8 @@ export const SERVICES: Service[] = [
       "Out-of-home, print and on-ground activations that extend your brand's reach beyond the screen and into the real world.",
     icon: Radio,
     image: "/Offline Marketing.png",
+    alt: "Offline Marketing Solutions",
+    path: "/offline-marketing-services",
   },
 ];
 

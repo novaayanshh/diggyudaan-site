@@ -6,14 +6,29 @@ export const Route = createFileRoute("/services")({
   component: ServicesPage,
   head: () => ({
     meta: [
-      { title: "Services — DigyUdaan Media House" },
+      {
+        title:
+          "Digital Marketing Services | SEO, Google Ads, Branding & More | DigyUdaan Media House",
+      },
       {
         name: "description",
         content:
-          "Every capability your D2C brand needs — Brand Identity, Performance Marketing, Social Media Management, Ecommerce Marketing, Graphic Design, Video Production  SEO, Website Development, influencer, brand management, Offline Marketing. All in-house.",
+          "Explore DigyUdaan's full suite of digital marketing services: SEO, Performance Marketing, Social Media Management, Ecommerce Marketing, Graphic Design, Video Production, Website Development, Influencer Marketing, Brand Management, Brand Identity Development and Offline Marketing — all in-house.",
       },
-      { property: "og:title", content: "DigyUdaan Services — Under One Roof" },
-      { property: "og:description", content: "Performance marketing, brand and tech — 100% in-house." },
+      {
+        name: "keywords",
+        content:
+          "SEO Services, Google Ads Services, Meta Ads, Social Media Marketing, Website Development, Graphic Design Services, Brand Identity Development, Brand Management, Performance Marketing, Video Production, Offline Marketing, Ecommerce Marketing, Influencer Marketing",
+      },
+      {
+        property: "og:title",
+        content: "Digital Marketing Services — DigyUdaan Media House, Under One Roof",
+      },
+      {
+        property: "og:description",
+        content:
+          "SEO, Google Ads, Meta Ads, branding, ecommerce marketing, video production and more — performance marketing, brand and tech, 100% in-house.",
+      },
     ],
   }),
 });
