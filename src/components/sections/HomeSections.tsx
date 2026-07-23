@@ -49,10 +49,9 @@ export function ClientMarquee() {
 
 /* ---------------- Client Logos Grid ---------------- */
 export function ClientLogosGrid() {
-  const logos = ["/Our Clients.png", "/Our Clients 2.png", "/Our Clients 3.png"];
   return (
     <section className="relative py-20">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-4xl px-6">
         <Reveal className="mx-auto mb-12 max-w-2xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
             Some of our esteemed clients
@@ -62,22 +61,16 @@ export function ClientLogosGrid() {
           </h2>
         </Reveal>
 
-        <Stagger className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {logos.map((src) => (
-            <motion.div
-              key={src}
-              variants={staggerItem}
-              className="flex items-center justify-center rounded-2xl bg-white p-6 shadow-lg shadow-black/10"
-            >
-              <img
-                src={src}
-                alt="Our clients"
-                className="h-56 w-full object-contain"
-                loading="lazy"
-              />
-            </motion.div>
-          ))}
-        </Stagger>
+        <Reveal delay={0.1}>
+          <div className="flex items-center justify-center rounded-2xl bg-white p-6 shadow-lg shadow-black/10 sm:p-10">
+            <img
+              src="/Our Clients.png"
+              alt="Our clients"
+              className="h-auto w-full max-w-2xl object-contain"
+              loading="lazy"
+            />
+          </div>
+        </Reveal>
       </div>
     </section>
   );
