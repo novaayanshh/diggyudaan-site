@@ -235,6 +235,16 @@ export function ServicesGrid({ compact = false }: { compact?: boolean }) {
           {items.map((s) => (
             <motion.div key={s.slug} variants={staggerItem} id={s.slug}>
               <GlassCard>
+                {s.image && (
+                  <div className="-mx-6 -mt-6 mb-5 overflow-hidden rounded-t-2xl">
+                    <img
+                      src={s.image}
+                      alt={s.title}
+                      className="h-40 w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/30 to-secondary/25 text-primary transition-all group-hover:rotate-6 group-hover:scale-110">
                   <s.icon className="h-6 w-6" />
                 </div>

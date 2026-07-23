@@ -36,6 +36,7 @@ export type Service = {
   short: string;
   description: string;
   icon: typeof Search;
+  image?: string;
 };
 
 export const SERVICES: Service[] = [
@@ -44,8 +45,9 @@ export const SERVICES: Service[] = [
     title: "Brand Identity",
     short: "Positioning, logo & guidelines",
     description:
-      "Strategic brand foundations — positioning, naming, logo systems and guidelines that give your D2C brand a distinct, memorable identity from day one.",
+      "Develop a memorable brand with strategic logo design, typography, color systems, visual guidelines, and complete branding solutions.",
     icon: Palette,
+    image: "/Brand Identity Develeopment.png",
   },
   {
     slug: "performance-marketing",
