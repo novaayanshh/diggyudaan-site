@@ -94,8 +94,9 @@ export const SERVICES: Service[] = [
     title: "SEO",
     short: "Organic growth engine",
     description:
-      "Technical SEO, content clusters and link authority tuned for D2C search intent. Rank, convert, retain.",
+      "Improve your website's visibility on search engines with technical SEO, on-page optimization, keyword research, and link-building strategies that drive long-term organic traffic.",
     icon: Search,
+    image: "/SEO.png",
   },
   {
     slug: "website-development",
