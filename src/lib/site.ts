@@ -14,7 +14,7 @@ import {
 
 export const SITE = {
   name: "DigyUdaan Media House",
-  tagline: "Let's Fly Together",
+  tagline: "Ignite Your Brand's Journey to Success",
   phone: ["+91 99900 04195", "+91 80103 67031"],
   whatsapp: "https://wa.me/919990004195",
   address: "Gaur City Centre, Greater Noida, India",

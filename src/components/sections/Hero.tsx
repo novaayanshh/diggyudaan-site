@@ -46,7 +46,16 @@ export function Hero() {
             </span>
           </motion.div>
 
-          <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.02] tracking-tight sm:text-6xl lg:text-[5.4rem]">
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15, duration: 0.6 }}
+            className="mt-4 font-display text-sm font-semibold uppercase tracking-[0.18em] text-secondary sm:text-base"
+          >
+            {SITE.tagline}
+          </motion.p>
+
+          <h1 className="mt-4 font-display text-5xl font-semibold leading-[1.02] tracking-tight sm:text-6xl lg:text-[5.4rem]">
             {"Transform Your".split(" ").map((w, i) => (
               <motion.span
                 key={i}
@@ -84,8 +93,9 @@ export function Hero() {
             transition={{ delay: 0.6, duration: 0.7 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg"
           >
-            From SEO and Performance Marketing to Creative Branding, Web Development, AI
-            Marketing, and Video Production. We help ambitious businesses{" "}
+            We Design, Build, and Propel Brands to Reach New Heights of Success. From SEO
+            and Performance Marketing to Creative Branding, Web Development, AI Marketing,
+            and Video Production, we help ambitious businesses{" "}
             <span className="text-foreground font-medium">generate more leads</span>,{" "}
             <span className="text-secondary font-semibold">increase conversions</span>, and
             achieve sustainable growth with data-driven digital strategies.
