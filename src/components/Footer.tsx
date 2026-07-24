@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import { Instagram, Linkedin, Youtube, Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
+import { Instagram, Linkedin, Youtube, Facebook, Twitter, Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 import { NAV, SERVICES, SITE } from "@/lib/site";
 import { Logo } from "./Logo";
 import { MagneticButton } from "./MagneticButton";
@@ -89,6 +89,8 @@ export function Footer() {
             <div className="mt-6 flex gap-2">
               {[
                 { Icon: Instagram, href: "https://www.instagram.com/digyudaan_media" },
+                { Icon: Facebook, href: "https://www.facebook.com/digyudaan" },
+                { Icon: Twitter, href: "https://x.com/digyudaan" },
                 { Icon: Youtube, href: "https://www.youtube.com/@DigyUdaan-n9z" },
                 { Icon: Linkedin, href: "https://www.linkedin.com/company/digy-udaan-media/" },
               ].map(({ Icon, href }, i) => (
