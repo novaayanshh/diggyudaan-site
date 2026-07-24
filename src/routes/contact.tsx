@@ -5,6 +5,7 @@ import { Reveal } from "@/components/Reveal";
 import { GlassCard } from "@/components/GlassCard";
 import { MagneticButton } from "@/components/MagneticButton";
 import { SITE } from "@/lib/site";
+import { submitContactForm } from "@/lib/contact-server";
 import { Mail, Phone, MapPin, MessageCircle, CheckCircle2, Loader2 } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
@@ -128,6 +129,7 @@ function ContactForm() {
   const [state, setState] = useState<"idle" | "loading" | "success">("idle");
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const validate = () => {
     const e: Record<string, string> = {};
@@ -141,10 +143,19 @@ function ContactForm() {
 
   const submit = async (ev: React.FormEvent) => {
     ev.preventDefault();
+    setSubmitError(null);
     if (!validate()) return;
     setState("loading");
-    await new Promise((r) => setTimeout(r, 1200));
-    setState("success");
+    try {
+      await submitContactForm({ data: form });
+      setState("success");
+    } catch (err) {
+      console.error(err);
+      setSubmitError(
+        err instanceof Error ? err.message : "Something went wrong. Please try again.",
+      );
+      setState("idle");
+    }
   };
 
   return (
@@ -181,7 +192,10 @@ function ContactForm() {
           <Field label="Name" error={errors.name}>
             <input
               value={form.name}
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
+              onChange={(e) => {
+                setForm({ ...form, name: e.target.value });
+                setErrors((prev) => ({ ...prev, name: "" }));
+              }}
               className="input"
               placeholder="Jane Founder"
             />
@@ -192,7 +206,10 @@ function ContactForm() {
               <input
                 type="email"
                 value={form.email}
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
+                onChange={(e) => {
+                  setForm({ ...form, email: e.target.value });
+                  setErrors((prev) => ({ ...prev, email: "" }));
+                }}
                 className="input"
                 placeholder="jane@brand.com"
               />
@@ -210,11 +227,20 @@ function ContactForm() {
           <Field label="Message" error={errors.message}>
             <textarea
               value={form.message}
-              onChange={(e) => setForm({ ...form, message: e.target.value })}
+              onChange={(e) => {
+                setForm({ ...form, message: e.target.value });
+                setErrors((prev) => ({ ...prev, message: "" }));
+              }}
               className="input min-h-[120px] py-3"
               placeholder="Tell us about your brand, goals and current stage…"
             />
           </Field>
+
+          {submitError && (
+            <p className="text-sm text-destructive" role="alert">
+              {submitError}
+            </p>
+          )}
 
           <MagneticButton
             type="submit"
