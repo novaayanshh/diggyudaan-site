@@ -24,7 +24,7 @@ export function ClientMarquee() {
       <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32 bg-gradient-to-r from-background to-transparent" />
       <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-gradient-to-l from-background to-transparent" />
       <div className="mb-6 text-center">
-        <p className="text-xs font-semibold uppercase tracking-[0.32em] text-muted-foreground">
+        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
           Trusted by ambitious D2C founders
         </p>
       </div>
@@ -33,44 +33,17 @@ export function ClientMarquee() {
           {items.map((c, i) => (
             <div
               key={i}
-              className="flex h-14 shrink-0 items-center gap-3 rounded-2xl glass px-6"
+              className="flex h-16 w-40 shrink-0 items-center justify-center rounded-xl bg-white px-5 shadow-sm shadow-black/5"
             >
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-primary/30 to-secondary/30 font-display text-sm font-bold text-foreground">
-                {c[0]}
-              </span>
-              <span className="font-display text-sm font-semibold tracking-tight">{c}</span>
+              <img
+                src={c.logo}
+                alt={c.name}
+                className="h-full w-full object-contain"
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
-      </div>
-    </section>
-  );
-}
-
-/* ---------------- Client Logos Grid ---------------- */
-export function ClientLogosGrid() {
-  return (
-    <section className="relative py-20">
-      <div className="mx-auto max-w-4xl px-6">
-        <Reveal className="mx-auto mb-12 max-w-2xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
-            Some of our esteemed clients
-          </p>
-          <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
-            Brands that <span className="text-gradient-brand">trust us</span>.
-          </h2>
-        </Reveal>
-
-        <Reveal delay={0.1}>
-          <div className="flex items-center justify-center rounded-2xl bg-white p-6 shadow-lg shadow-black/10 sm:p-10">
-            <img
-              src="/Our Clients.png"
-              alt="Our clients"
-              className="h-auto w-full max-w-2xl object-contain"
-              loading="lazy"
-            />
-          </div>
-        </Reveal>
       </div>
     </section>
   );
