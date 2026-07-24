@@ -107,7 +107,7 @@ export function Navbar() {
                               <div>
                                 <p className="text-sm font-semibold">Not sure where to start?</p>
                                 <p className="text-xs text-muted-foreground">
-                                  Get a free marketing audit — no strings.
+                                  Get a free marketing audit, no strings.
                                 </p>
                               </div>
                               <MagneticButton href={SITE.whatsapp} variant="gold" size="sm">

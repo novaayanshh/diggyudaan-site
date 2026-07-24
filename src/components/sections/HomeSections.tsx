@@ -226,7 +226,7 @@ export function ServicesGrid({ compact = false }: { compact?: boolean }) {
             </h2>
           </div>
           <p className="max-w-md text-sm text-muted-foreground">
-            From brand identity to full-funnel performance — one integrated team, one shared north
+            From brand identity to full-funnel performance: one integrated team, one shared north
             star: your revenue.
           </p>
         </Reveal>

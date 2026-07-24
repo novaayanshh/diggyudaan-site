@@ -13,7 +13,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Explore DigyUdaan's full suite of digital marketing services: SEO, Performance Marketing, Social Media Management, Ecommerce Marketing, Graphic Design, Video Production, Website Development, Influencer Marketing, Brand Management, Brand Identity Development and Offline Marketing — all in-house.",
+          "Explore DigyUdaan's full suite of digital marketing services: SEO, Performance Marketing, Social Media Management, Ecommerce Marketing, Graphic Design, Video Production, Website Development, Influencer Marketing, Brand Management, Brand Identity Development and Offline Marketing, all in-house.",
       },
       {
         name: "keywords",
@@ -22,12 +22,12 @@ export const Route = createFileRoute("/services")({
       },
       {
         property: "og:title",
-        content: "Digital Marketing Services — DigyUdaan Media House, Under One Roof",
+        content: "Digital Marketing Services | DigyUdaan Media House, Under One Roof",
       },
       {
         property: "og:description",
         content:
-          "SEO, Google Ads, Meta Ads, branding, ecommerce marketing, video production and more — performance marketing, brand and tech, 100% in-house.",
+          "SEO, Google Ads, Meta Ads, branding, ecommerce marketing, video production and more: performance marketing, brand and tech, 100% in-house.",
       },
     ],
   }),
@@ -47,7 +47,7 @@ function ServicesPage() {
               <span className="text-gradient-gold">deliver innovative solutions</span>.
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              We empower brands to soar in the digital landscape — creativity and strategy, hand
+              We empower brands to soar in the digital landscape: creativity and strategy, hand
               in hand. Every function under one roof, one focused team.
             </p>
           </Reveal>

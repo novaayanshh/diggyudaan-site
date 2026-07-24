@@ -16,13 +16,13 @@ const CANNED: Record<string, string> = {
   audit:
     "I can run a **free website audit** covering conversion friction, page speed, on-page SEO and ad readiness. Share your URL and I'll draft findings in ~60 seconds.",
   seo:
-    "For SEO I look at technical health, content clusters, backlinks and intent gaps. Want a **quick SEO diagnosis** — paste your domain.",
+    "For SEO I look at technical health, content clusters, backlinks and intent gaps. Want a **quick SEO diagnosis**? Paste your domain.",
   strategy:
     "For D2C growth I run our 6-D framework: **Discover → Define → Design → Develop → Deploy → Deliver**. Tell me your brand, price point and current MRR and I'll draft a 90-day plan.",
   roi:
-    "Give me your average order value, current monthly ad spend, ROAS and gross margin — I'll model a 90-day scale projection right here.",
+    "Give me your average order value, current monthly ad spend, ROAS and gross margin, and I'll model a 90-day scale projection right here.",
   default:
-    "I'm the DigyUdaan AI Assistant. I can audit sites, plan campaigns, calculate ROI and draft proposals. Ask me anything — or book a **free marketing audit** and a human takes over.",
+    "I'm the DigyUdaan AI Assistant. I can audit sites, plan campaigns, calculate ROI and draft proposals. Ask me anything, or book a **free marketing audit** and a human takes over.",
 };
 
 function pickReply(q: string) {
@@ -41,7 +41,7 @@ export function AIChatWidget() {
     {
       role: "assistant",
       content:
-        "Hey — I'm the **DigyUdaan AI Assistant**. Ask me for a website audit, SEO check, growth strategy, or ROI projection.",
+        "Hey, I'm the **DigyUdaan AI Assistant**. Ask me for a website audit, SEO check, growth strategy, or ROI projection.",
     },
   ]);
   const scrollRef = useRef<HTMLDivElement>(null);

@@ -70,7 +70,7 @@ export const SERVICES: Service[] = [
     title: "Social Media Management",
     short: "Community & content calendars",
     description:
-      "Editorial calendars, community management and platform-native storytelling that grows real audiences — not vanity followers.",
+      "Editorial calendars, community management and platform-native storytelling that grows real audiences, not vanity followers.",
     icon: Share2,
     image: "/Social Media Marketing.png",
     alt: "Social Media Marketing Services",
@@ -175,7 +175,7 @@ export const PROCESS = [
   {
     n: "02",
     title: "Define",
-    body: "Clarity meets purpose. We craft a clear roadmap — vision, audience, precise goals — so every step is purposeful and impactful.",
+    body: "Clarity meets purpose. We craft a clear roadmap (vision, audience, precise goals) so every step is purposeful and impactful.",
   },
   {
     n: "03",
@@ -195,7 +195,7 @@ export const PROCESS = [
   {
     n: "06",
     title: "Deliver",
-    body: "Mission accomplished — with training, support and post-launch optimization so you keep compounding wins.",
+    body: "Mission accomplished, with training, support and post-launch optimization so you keep compounding wins.",
   },
 ];
 
@@ -213,7 +213,7 @@ export const WHY = [
   },
   {
     title: "Complete In-House Ecosystem",
-    body: "Strategy to performance marketing — every function under one roof.",
+    body: "Strategy to performance marketing: every function under one roof.",
   },
   {
     title: 'No "Practice" on Your Money',
@@ -248,7 +248,7 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "The 6-D process is real. Discover to Deliver — we always know what's shipping next and why. Rare in Indian agencies.",
+      "The 6-D process is real. Discover to Deliver: we always know what's shipping next and why. Rare in Indian agencies.",
     name: "Sumaya Khan",
     role: "Founder, Sumaya Studio",
   },
@@ -271,7 +271,7 @@ export const FAQS = [
   },
   {
     q: "What does the engagement look like?",
-    a: "We work with a maximum of 10 new clients per month to guarantee focus. Every engagement gets a dedicated pod — strategy, creative, media, and web — all in-house.",
+    a: "We work with a maximum of 10 new clients per month to guarantee focus. Every engagement gets a dedicated pod (strategy, creative, media, and web), all in-house.",
   },
   {
     q: "Do you guarantee ROAS?",

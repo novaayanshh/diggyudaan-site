@@ -16,7 +16,7 @@ export type ContactFormInput = z.infer<typeof ContactSchema>;
  * Setup required (one-time):
  * 1. Create a free account at https://resend.com
  * 2. Verify a sending domain (e.g. digyudaan.com) under Resend > Domains
- *    — until verified, Resend only lets you send to the account's own email.
+ *    (until verified, Resend only lets you send to the account's own email)
  * 3. Create an API key under Resend > API Keys.
  * 4. In Vercel: Project Settings > Environment Variables, add
  *    RESEND_API_KEY = <your key>, then redeploy.

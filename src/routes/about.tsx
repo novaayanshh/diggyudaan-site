@@ -11,7 +11,7 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
   head: () => ({
     meta: [
-      { title: "About — DigyUdaan Media House" },
+      { title: "About | DigyUdaan Media House" },
       {
         name: "description",
         content:
@@ -62,7 +62,7 @@ function AboutPage() {
               <span className="text-gradient-gold">Business Success</span>.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
-              At DiggyUdaan, we are more than just a digital marketing agency—we are your
+              At DiggyUdaan, we are more than just a digital marketing agency. We are your
               strategic growth partner. We help businesses transform ideas into powerful digital
               experiences through innovative marketing strategies, creative branding,
               cutting-edge technology, and data-driven solutions.
@@ -149,7 +149,7 @@ function AboutPage() {
             {
               icon: Heart,
               title: "Our Mission",
-              body: "Elevate first-generation D2C founders from zero sales to sustainable scale — with brand, tech and performance under one roof.",
+              body: "Elevate first-generation D2C founders from zero sales to sustainable scale, with brand, tech and performance under one roof.",
             },
           ].map((c, i) => (
             <Reveal key={c.title} delay={i * 0.08}>

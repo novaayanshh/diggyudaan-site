@@ -12,7 +12,7 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
   head: () => ({
     meta: [
-      { title: "Contact — DigyUdaan Media House" },
+      { title: "Contact | DigyUdaan Media House" },
       {
         name: "description",
         content:
@@ -41,7 +41,7 @@ function ContactPage() {
               <span className="text-gradient-brand">Let's craft a tailored solution.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              Get in touch — learn about our services, discuss your project, or ask any question.
+              Get in touch: learn about our services, discuss your project, or ask any question.
               We reply within one business day.
             </p>
           </Reveal>

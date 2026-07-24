@@ -63,7 +63,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Logo />
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-              Your D2C growth partner. From brand strategy to performance marketing — everything
+              Your D2C growth partner: from brand strategy to performance marketing, everything
               under one roof. Let's Fly Together.
             </p>
             <div className="mt-6 space-y-3 text-sm">

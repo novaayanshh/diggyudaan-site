@@ -87,7 +87,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "DigyUdaan Media House is a full-service digital marketing agency offering SEO, Google Ads, Meta Ads, Social Media Marketing, Website Development, Branding, Performance Marketing, Ecommerce Marketing and Video Production to help D2C brands grow online — 0 to 100+ orders in 30 days, 100% in-house.",
+          "DigyUdaan Media House is a full-service digital marketing agency offering SEO, Google Ads, Meta Ads, Social Media Marketing, Website Development, Branding, Performance Marketing, Ecommerce Marketing and Video Production to help D2C brands grow online: 0 to 100+ orders in 30 days, 100% in-house.",
       },
       { name: "author", content: "DigyUdaan Media House" },
       {
@@ -103,7 +103,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Full-service digital marketing agency: SEO, Google Ads, Meta Ads, Social Media Marketing, Website Development, Branding, Performance Marketing, Ecommerce Marketing and Video Production — all in-house, under one roof.",
+          "Full-service digital marketing agency: SEO, Google Ads, Meta Ads, Social Media Marketing, Website Development, Branding, Performance Marketing, Ecommerce Marketing and Video Production, all in-house, under one roof.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

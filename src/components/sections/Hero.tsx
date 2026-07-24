@@ -85,7 +85,7 @@ export function Hero() {
             className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg"
           >
             From SEO and Performance Marketing to Creative Branding, Web Development, AI
-            Marketing, and Video Production — we help ambitious businesses{" "}
+            Marketing, and Video Production. We help ambitious businesses{" "}
             <span className="text-foreground font-medium">generate more leads</span>,{" "}
             <span className="text-secondary font-semibold">increase conversions</span>, and
             achieve sustainable growth with data-driven digital strategies.

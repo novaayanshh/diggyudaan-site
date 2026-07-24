@@ -42,7 +42,7 @@ export type ServicePage = {
   alt: string;
   /** Main body copy */
   description: string;
-  /** What's included — bullet points */
+  /** What's included: bullet points */
   features: string[];
 };
 
@@ -51,7 +51,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     path: "/seo-services",
     navLabel: "SEO Services",
     h1: "SEO Services in Noida",
-    tagline: "Rank higher, stay higher — organic growth that compounds.",
+    tagline: "Rank higher, stay higher: organic growth that compounds.",
     metaTitle: "SEO Services in Noida | Best SEO Company | DigyUdaan Media House",
     metaDescription:
       "Improve your Google rankings with DigyUdaan's professional SEO services. Technical SEO, On-Page SEO, Local SEO & Link Building for long-term growth.",
@@ -68,7 +68,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     image: "/SEO.png",
     alt: "Professional SEO Services for Business Growth",
     description:
-      "We build organic growth engines, not one-off audits. Our SEO team combines technical fixes, on-page optimization, content and authority link-building so your site ranks — and keeps ranking — for the searches that actually drive revenue.",
+      "We build organic growth engines, not one-off audits. Our SEO team combines technical fixes, on-page optimization, content and authority link-building so your site ranks, and keeps ranking, for the searches that actually drive revenue.",
     features: [
       "Technical SEO audits & site-speed fixes",
       "On-page optimization (titles, metas, internal linking)",
@@ -98,7 +98,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     icon: Megaphone,
     alt: "Google Ads Campaign Management Services",
     description:
-      "From Search and Shopping to Display and Performance Max, we run Google Ads accounts like a P&L — not a spend target. Continuous testing, tight audience laddering and conversion tracking that's actually accurate.",
+      "From Search and Shopping to Display and Performance Max, we run Google Ads accounts like a P&L, not a spend target. Continuous testing, tight audience laddering and conversion tracking that's actually accurate.",
     features: [
       "Search, Shopping & Performance Max campaigns",
       "Conversion tracking & GA4/GTM setup",
@@ -128,7 +128,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     image: "/Performance Marketing.png",
     alt: "Facebook and Instagram Advertising Services",
     description:
-      "Certified Meta Ads specialists running full-funnel campaigns across Facebook and Instagram — prospecting, retargeting and creative testing built to lift ROAS, not just impressions.",
+      "Certified Meta Ads specialists running full-funnel campaigns across Facebook and Instagram: prospecting, retargeting and creative testing built to lift ROAS, not just impressions.",
     features: [
       "Full-funnel Facebook & Instagram campaigns",
       "Creative testing (static, video, UGC)",
@@ -158,7 +158,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     image: "/Social Media Marketing.png",
     alt: "Social Media Marketing Services",
     description:
-      "Editorial calendars, community management and platform-native storytelling across Instagram, Facebook, LinkedIn and YouTube — built to grow engaged audiences that actually convert.",
+      "Editorial calendars, community management and platform-native storytelling across Instagram, Facebook, LinkedIn and YouTube, built to grow engaged audiences that actually convert.",
     features: [
       "Platform-native content calendars",
       "Community management & DMs",
@@ -218,7 +218,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     image: "/Graphic Design.png",
     alt: "Creative Graphic Design Services",
     description:
-      "Studio-grade ad creatives, product catalogues and PDP assets designed to lift click-through and conversion across every channel — social, web, print and packaging.",
+      "Studio-grade ad creatives, product catalogues and PDP assets designed to lift click-through and conversion across every channel: social, web, print and packaging.",
     features: [
       "Ad & social media creatives",
       "Brand collateral & brochures",
@@ -273,7 +273,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     image: "/Brand Management.png",
     alt: "Professional Brand Management Services",
     description:
-      "Positioning, identity systems, guidelines and the ongoing brand governance that keeps you consistent as you scale — across every campaign, channel and team.",
+      "Positioning, identity systems, guidelines and the ongoing brand governance that keeps you consistent as you scale, across every campaign, channel and team.",
     features: [
       "Brand positioning & strategy",
       "Online reputation management",
@@ -328,7 +328,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     image: "/Video Production.png",
     alt: "Professional Video Production Services",
     description:
-      "Scroll-stopping video: performance UGC, brand films, product reels and hook-first ad creatives crafted in-house — from concept and shoot through edit and delivery.",
+      "Scroll-stopping video: performance UGC, brand films, product reels and hook-first ad creatives crafted in-house, from concept and shoot through edit and delivery.",
     features: [
       "Product & commercial shoots",
       "Brand films & corporate videos",
@@ -343,7 +343,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     path: "/offline-marketing-services",
     navLabel: "Offline Marketing",
     h1: "Offline Marketing & Outdoor Advertising Agency",
-    tagline: "Beyond the screen — real-world brand reach.",
+    tagline: "Beyond the screen: real-world brand reach.",
     metaTitle: "Offline Marketing & Outdoor Advertising Agency | DigyUdaan Media House",
     metaDescription:
       "Billboards, exhibitions, print advertising, mall branding and offline marketing solutions.",
@@ -358,7 +358,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     image: "/Offline Marketing.png",
     alt: "Offline Marketing Solutions",
     description:
-      "Out-of-home, print and on-ground activations that extend your brand's reach beyond the screen and into the real world — billboards, exhibitions, mall branding and more.",
+      "Out-of-home, print and on-ground activations that extend your brand's reach beyond the screen and into the real world: billboards, exhibitions, mall branding and more.",
     features: [
       "Billboard & hoarding placements",
       "Mall & retail branding",
@@ -387,7 +387,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     icon: Sparkles,
     alt: "Artificial Intelligence Marketing Solutions",
     description:
-      "We layer AI into the marketing stack where it actually moves the needle — content generation, chatbot-led lead capture, on-site personalization and predictive analytics that sharpen targeting.",
+      "We layer AI into the marketing stack where it actually moves the needle: content generation, chatbot-led lead capture, on-site personalization and predictive analytics that sharpen targeting.",
     features: [
       "AI-assisted content generation",
       "Chatbot setup for lead capture",
@@ -417,7 +417,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     image: "/Ecommerce.png",
     alt: "E-Commerce Marketing Services",
     description:
-      "Marketplace optimization, retention flows and conversion-focused campaigns across Shopify, WooCommerce and marketplaces — built to turn store traffic into repeat revenue.",
+      "Marketplace optimization, retention flows and conversion-focused campaigns across Shopify, WooCommerce and marketplaces, built to turn store traffic into repeat revenue.",
     features: [
       "Shopify & WooCommerce marketing",
       "Google Shopping & Meta catalog ads",
@@ -447,7 +447,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     image: "/Influencer Growth.png",
     alt: "Influencer Marketing Services",
     description:
-      "Vetted creator networks, whitelisted ads and performance-tracked partnerships that turn reach into revenue — not just impressions and follower counts.",
+      "Vetted creator networks, whitelisted ads and performance-tracked partnerships that turn reach into revenue, not just impressions and follower counts.",
     features: [
       "Creator sourcing & vetting",
       "Campaign briefing & negotiation",
@@ -476,7 +476,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     icon: FileText,
     alt: "Content Marketing Services",
     description:
-      "Blogs, website copy, and social content built around real search intent — written to bring organic traffic in and keep readers on the page long enough to convert.",
+      "Blogs, website copy, and social content built around real search intent, written to bring organic traffic in and keep readers on the page long enough to convert.",
     features: [
       "SEO-driven blog writing",
       "Website & landing page copy",
@@ -505,7 +505,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     icon: Mail,
     alt: "Professional Email Marketing Services",
     description:
-      "Automated email flows and newsletters designed for retention, not just broadcast — welcome series, abandoned cart, win-back and lifecycle campaigns that keep customers coming back.",
+      "Automated email flows and newsletters designed for retention, not just broadcast: welcome series, abandoned cart, win-back and lifecycle campaigns that keep customers coming back.",
     features: [
       "Welcome & lifecycle email flows",
       "Abandoned cart & win-back campaigns",
@@ -553,7 +553,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     icon: Store,
     alt: "Marketplace Marketing Services",
     description:
-      "Listing optimization, marketplace ads and catalog management across Amazon, Flipkart and other online marketplaces — built to grow sales where your customers already shop.",
+      "Listing optimization, marketplace ads and catalog management across Amazon, Flipkart and other online marketplaces, built to grow sales where your customers already shop.",
     features: [
       "Amazon & Flipkart listing optimization",
       "Marketplace PPC (Sponsored Ads)",
@@ -582,7 +582,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     icon: TrendingUp,
     alt: "Lead Generation Services",
     description:
-      "SEO, PPC, Meta Ads and conversion-optimized landing pages working together as one system — built to generate qualified leads your sales team actually wants to talk to.",
+      "SEO, PPC, Meta Ads and conversion-optimized landing pages working together as one system, built to generate qualified leads your sales team actually wants to talk to.",
     features: [
       "Lead-gen landing page design",
       "PPC & Meta Ads for lead capture",
@@ -611,7 +611,7 @@ export const SERVICE_PAGES: Record<string, ServicePage> = {
     icon: Lightbulb,
     alt: "Creative Strategy Services",
     description:
-      "Creative marketing campaigns, advertising strategy and branding solutions that drive business growth — from big-idea concepting to channel-by-channel campaign planning.",
+      "Creative marketing campaigns, advertising strategy and branding solutions that drive business growth, from big-idea concepting to channel-by-channel campaign planning.",
     features: [
       "Campaign concepting & big ideas",
       "Advertising & messaging strategy",

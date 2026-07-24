@@ -10,7 +10,7 @@ export const Route = createFileRoute("/success-story")({
   component: SuccessPage,
   head: () => ({
     meta: [
-      { title: "Our Successful Story — DigyUdaan Media House" },
+      { title: "Our Successful Story | DigyUdaan Media House" },
       {
         name: "description",
         content:
@@ -105,7 +105,7 @@ function SuccessPage() {
                 Spotlight
               </p>
               <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-                Showshaa — from <span className="text-gradient-gold">0 to ₹42L/month</span>.
+                Showshaa: from <span className="text-gradient-gold">0 to ₹42L/month</span>.
               </h2>
               <div className="mt-8 grid gap-8 md:grid-cols-3">
                 {[
