@@ -11,27 +11,25 @@ export function Footer() {
   const [subscribed, setSubscribed] = useState(false);
 
   return (
-    <footer className="relative mt-24 border-t border-white/10 pt-16">
+    <footer className="relative mt-20 border-t border-border pt-16">
       {/* Newsletter */}
       <div className="mx-auto max-w-7xl px-6">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="glass-strong relative -mt-32 mb-16 overflow-hidden rounded-3xl p-8 md:p-12"
+          transition={{ duration: 0.6 }}
+          className="dark-panel relative -mt-28 mb-16 rounded-[28px] p-8 md:p-12"
         >
-          <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-secondary/25 blur-3xl" aria-hidden />
-          <div className="absolute -left-24 -bottom-24 h-72 w-72 rounded-full bg-primary/25 blur-3xl" aria-hidden />
-          <div className="relative grid gap-8 md:grid-cols-2 md:items-center">
+          <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary-light">
                 Newsletter
               </p>
               <h3 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
                 Growth playbooks, delivered monthly.
               </h3>
-              <p className="mt-2 text-sm text-muted-foreground">
+              <p className="mt-2 text-sm text-background/70">
                 Real D2C teardowns, ad frameworks and case studies. No fluff.
               </p>
             </div>
@@ -50,7 +48,7 @@ export function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@brand.com"
-                className="flex-1 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm outline-none transition focus:border-primary/60 focus:bg-white/10"
+                className="flex-1 rounded-full border border-background/25 bg-background/10 px-5 py-3 text-sm text-background outline-none transition placeholder:text-background/50 focus:border-secondary/70 focus:bg-background/15"
               />
               <MagneticButton type="submit" variant="gold">
                 {subscribed ? "Subscribed" : "Subscribe"}
@@ -68,19 +66,19 @@ export function Footer() {
             </p>
             <div className="mt-6 space-y-3 text-sm">
               <a href={`mailto:${SITE.email}`} className="group flex items-center gap-3 text-foreground/80 hover:text-foreground">
-                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/15 text-primary">
+                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 text-primary">
                   <Mail className="h-4 w-4" />
                 </span>
                 {SITE.email}
               </a>
               <a href={`tel:${SITE.phone[0].replace(/\s/g, "")}`} className="group flex items-center gap-3 text-foreground/80 hover:text-foreground">
-                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/15 text-primary">
+                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 text-primary">
                   <Phone className="h-4 w-4" />
                 </span>
                 {SITE.phone.join("  •  ")}
               </a>
               <div className="flex items-center gap-3 text-foreground/80">
-                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/15 text-primary">
+                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 text-primary">
                   <MapPin className="h-4 w-4" />
                 </span>
                 {SITE.address}
@@ -99,10 +97,10 @@ export function Footer() {
                   href={href}
                   target="_blank"
                   rel="noreferrer"
-                  className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all hover:-translate-y-0.5 hover:border-secondary/60 hover:bg-secondary/10 hover:text-secondary"
+                  className="group flex h-10 w-10 items-center justify-center rounded-full border border-border transition-all hover:-translate-y-0.5 hover:border-secondary hover:bg-secondary/10 hover:text-secondary-dark"
                   aria-label={href}
                 >
-                  <Icon className="h-4 w-4 transition-transform group-hover:rotate-6" />
+                  <Icon className="h-4 w-4" />
                 </a>
               ))}
             </div>
@@ -124,11 +122,11 @@ export function Footer() {
           />
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-8 text-xs text-muted-foreground md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-border py-8 text-xs text-muted-foreground md:flex-row">
           <p>© {new Date().getFullYear()} DigyUdaan Media House. All rights reserved.</p>
           <p className="flex items-center gap-2">
             Crafted with intent
-            <span className="text-secondary">•</span>
+            <span className="text-secondary-dark">•</span>
             Let's Fly Together
           </p>
         </div>
@@ -146,7 +144,7 @@ function FooterCol({
 }) {
   return (
     <div>
-      <p className="text-xs font-semibold uppercase tracking-[0.24em] text-secondary">{title}</p>
+      <p className="text-xs font-semibold uppercase tracking-[0.24em] text-secondary-dark">{title}</p>
       <ul className="mt-4 space-y-2.5">
         {links.map((l) => (
           <li key={l.label}>

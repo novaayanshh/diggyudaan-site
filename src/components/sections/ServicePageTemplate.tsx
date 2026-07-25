@@ -15,7 +15,7 @@ export function ServicePageTemplate({ data }: { data: ServicePage }) {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-40 pb-16">
+      <section className="relative pt-16 pb-16">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
             <Link
@@ -56,8 +56,8 @@ export function ServicePageTemplate({ data }: { data: ServicePage }) {
             </Reveal>
           ) : (
             <Reveal>
-              <div className="glass-strong flex h-full min-h-[280px] items-center justify-center rounded-3xl">
-                <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/30 to-secondary/25 text-primary">
+              <div className="flex h-full min-h-[280px] items-center justify-center rounded-3xl border border-border bg-surface-2">
+                <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 text-primary">
                   <Icon className="h-10 w-10" />
                 </div>
               </div>
@@ -85,7 +85,7 @@ export function ServicePageTemplate({ data }: { data: ServicePage }) {
               {data.secondaryKeywords.map((k) => (
                 <span
                   key={k}
-                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-muted-foreground"
+                  className="rounded-full border border-border bg-surface-2 px-3 py-1 text-xs text-muted-foreground"
                 >
                   {k}
                 </span>

@@ -149,8 +149,6 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    background-image: var(--gradient-hero);
-    background-attachment: fixed;
     overflow-x: hidden;
   }
   h1, h2, h3, h4, h5 {
@@ -176,17 +174,43 @@
 
 /* ---------- Utilities ---------- */
 
+/* Flat, bordered "paper" surface — replaces the old frosted-glass look
+   with the clean editorial cards used across the Graphicfolio-style layout. */
 @utility glass {
-  background: color-mix(in oklab, var(--surface) 55%, transparent);
-  backdrop-filter: blur(20px) saturate(160%);
-  border: 1px solid color-mix(in oklab, var(--primary-light) 18%, transparent);
-  box-shadow: var(--shadow-glass);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: none;
 }
 
+/* Opaque light panel — used for dropdowns, the mobile menu sheet, and
+   error/404 states. Kept light so default navy text stays readable. */
 @utility glass-strong {
-  background: color-mix(in oklab, var(--surface-2) 75%, transparent);
-  backdrop-filter: blur(28px) saturate(180%);
-  border: 1px solid color-mix(in oklab, var(--primary-light) 22%, transparent);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+
+/* Solid dark-navy panel, for the CTA band and newsletter block. */
+@utility dark-panel {
+  background: var(--foreground);
+  color: var(--background);
+  border: 1px solid transparent;
+}
+
+/* Numbered editorial list row (services / work), à la Graphicfolio. */
+@utility row-list {
+  border-top: 1px solid var(--border);
+}
+@utility row-item {
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.2s ease;
+}
+@utility row-item-hover {
+  background-color: var(--surface-2);
+}
+@utility idx-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--secondary-dark);
 }
 
 @utility text-gradient-brand {

@@ -3,7 +3,7 @@ import { useRef, type ReactNode, type MouseEvent } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 
-type Variant = "primary" | "gold" | "ghost" | "outline";
+type Variant = "primary" | "gold" | "ghost" | "outline" | "outline-dark";
 
 export function MagneticButton({
   children,
@@ -57,12 +57,13 @@ export function MagneticButton({
   }[size];
 
   const variants: Record<Variant, string> = {
-    primary:
-      "bg-gradient-to-r from-primary to-primary-light text-primary-foreground shadow-[0_10px_40px_-10px_color-mix(in_oklab,var(--primary)_60%,transparent)] hover:shadow-[0_18px_60px_-15px_color-mix(in_oklab,var(--primary)_80%,transparent)]",
-    gold: "bg-gradient-to-r from-secondary to-secondary-light text-secondary-foreground shadow-[0_10px_40px_-10px_color-mix(in_oklab,var(--secondary)_60%,transparent)] hover:shadow-[0_18px_60px_-15px_color-mix(in_oklab,var(--secondary)_80%,transparent)]",
+    primary: "bg-primary text-primary-foreground hover:bg-primary-dark",
+    gold: "bg-secondary text-secondary-foreground hover:bg-secondary-dark hover:text-white",
     outline:
-      "bg-transparent text-foreground border border-white/15 hover:border-primary/60 hover:bg-primary/5",
-    ghost: "bg-white/5 text-foreground hover:bg-white/10 border border-white/10",
+      "bg-transparent text-foreground border border-foreground hover:bg-foreground hover:text-background",
+    "outline-dark":
+      "bg-transparent text-background border border-background/40 hover:bg-background hover:text-foreground",
+    ghost: "bg-surface-2 text-foreground hover:bg-surface border border-border",
   };
 
   const inner = (

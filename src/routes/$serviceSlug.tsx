@@ -53,7 +53,7 @@ function SingleServicePage() {
   return (
     <>
       {/* Service Hero Section */}
-      <section className="relative pt-40 pb-16">
+      <section className="relative pt-16 pb-16">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary">
