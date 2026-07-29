@@ -25,8 +25,7 @@ export function CursorGlow() {
       <div
         className="h-full w-full rounded-full blur-3xl"
         style={{
-          background:
-            "radial-gradient(closest-side, color-mix(in oklab, var(--primary) 35%, transparent), transparent 70%)",
+          background: "color-mix(in oklab, var(--primary) 20%, transparent)",
         }}
       />
     </motion.div>
