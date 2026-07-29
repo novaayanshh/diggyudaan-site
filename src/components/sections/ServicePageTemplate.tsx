@@ -57,7 +57,7 @@ export function ServicePageTemplate({ data }: { data: ServicePage }) {
           ) : (
             <Reveal>
               <div className="flex h-full min-h-[280px] items-center justify-center rounded-3xl border border-border bg-surface-2">
-                <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 text-primary">
+                <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-primary/15 text-primary">
                   <Icon className="h-10 w-10" />
                 </div>
               </div>
@@ -114,7 +114,7 @@ export function ServicePageTemplate({ data }: { data: ServicePage }) {
                 <motion.div key={s.slug} variants={staggerItem}>
                   <Link to="/services" hash={s.slug}>
                     <GlassCard>
-                      <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/30 to-secondary/25 text-primary">
+                      <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-primary/20 text-primary">
                         <s.icon className="h-5 w-5" />
                       </div>
                       <h3 className="font-display text-lg font-semibold">{s.title}</h3>

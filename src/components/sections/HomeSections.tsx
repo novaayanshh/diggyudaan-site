@@ -20,8 +20,6 @@ export function ClientMarquee() {
   const items = [...CLIENTS, ...CLIENTS];
   return (
     <section className="relative border-y border-border py-10">
-      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32 bg-gradient-to-r from-background to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-gradient-to-l from-background to-transparent" />
       <div className="mb-6 text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-secondary-dark">
           Trusted by ambitious D2C founders
@@ -301,7 +299,7 @@ export function TestimonialsSection() {
                 "{t.quote}"
               </p>
               <div className="mt-8 flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary to-secondary text-lg font-bold text-primary-foreground">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-lg font-bold text-primary-foreground">
                   {t.name.charAt(0)}
                 </div>
                 <div>

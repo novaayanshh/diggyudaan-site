@@ -60,8 +60,7 @@ export function Hero() {
           transition={{ delay: 0.15, duration: 0.7 }}
           className="relative mt-14 overflow-hidden rounded-3xl"
           style={{
-            background:
-              "linear-gradient(120deg, var(--primary-dark) 0%, #1c3363 55%, var(--primary) 130%)",
+            background: "var(--primary-dark)",
           }}
         >
           <div className="grid gap-6 p-8 sm:grid-cols-2 md:p-12 lg:grid-cols-4">

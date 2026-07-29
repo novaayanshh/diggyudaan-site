@@ -85,13 +85,6 @@ export function MagneticButton({
     className,
   );
 
-  const sheen = (
-    <span
-      aria-hidden
-      className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full"
-    />
-  );
-
   if (href) {
     return (
       <motion.a
@@ -105,7 +98,6 @@ export function MagneticButton({
         whileTap={{ scale: 0.96 }}
         className={cls}
       >
-        {sheen}
         {inner}
       </motion.a>
     );
@@ -123,7 +115,6 @@ export function MagneticButton({
       whileTap={{ scale: 0.96 }}
       className={cls}
     >
-      {sheen}
       {inner}
     </motion.button>
   );

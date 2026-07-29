@@ -178,7 +178,7 @@ function AboutPage() {
           <div className="relative">
             <div
               aria-hidden
-              className="absolute left-5 top-0 h-full w-px bg-gradient-to-b from-primary/50 via-secondary/50 to-transparent md:left-1/2"
+              className="absolute left-5 top-0 h-full w-px bg-primary/40 md:left-1/2"
             />
             <Stagger className="space-y-10">
               {[
@@ -201,7 +201,7 @@ function AboutPage() {
                       <p className="mt-2 text-sm text-muted-foreground">{t.body}</p>
                     </GlassCard>
                   </div>
-                  <span className="absolute left-5 top-6 -translate-x-1/2 h-4 w-4 rounded-full bg-gradient-to-br from-primary to-secondary ring-4 ring-background md:left-1/2 md:top-1/2 md:-translate-y-1/2" />
+                  <span className="absolute left-5 top-6 -translate-x-1/2 h-4 w-4 rounded-full bg-primary ring-4 ring-background md:left-1/2 md:top-1/2 md:-translate-y-1/2" />
                 </motion.div>
               ))}
             </Stagger>

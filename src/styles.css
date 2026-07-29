@@ -55,27 +55,6 @@
   --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
 
-  /* Signature gradients (brand only) */
-  --gradient-hero: radial-gradient(
-      1000px 500px at 8% 0%,
-      color-mix(in oklab, var(--primary) 10%, transparent),
-      transparent 55%
-    ),
-    radial-gradient(
-      800px 450px at 92% 10%,
-      color-mix(in oklab, var(--secondary) 10%, transparent),
-      transparent 55%
-    );
-
-  --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-light));
-  --gradient-gold: linear-gradient(135deg, var(--secondary), var(--secondary-light));
-  --gradient-brand: linear-gradient(
-    135deg,
-    var(--primary) 0%,
-    var(--primary-light) 50%,
-    var(--secondary) 100%
-  );
-
   --shadow-elegant: 0 20px 60px -20px color-mix(in oklab, var(--primary) 40%, transparent);
   --shadow-gold: 0 20px 60px -20px color-mix(in oklab, var(--secondary) 45%, transparent);
   --shadow-glass: 0 8px 32px 0 color-mix(in oklab, var(--primary-dark) 45%, transparent);
@@ -214,24 +193,15 @@
 }
 
 @utility text-gradient-brand {
-  background: var(--gradient-brand);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--primary);
 }
 
 @utility text-gradient-gold {
-  background: var(--gradient-gold);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--secondary);
 }
 
 @utility text-gradient-blue {
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--primary);
 }
 
 @utility bg-noise {
@@ -253,11 +223,8 @@
 }
 
 @utility border-gradient {
-  position: relative;
-  background:
-    linear-gradient(var(--surface), var(--surface)) padding-box,
-    var(--gradient-brand) border-box;
-  border: 1px solid transparent;
+  background: var(--surface);
+  border: 1px solid var(--primary);
 }
 
 /* Marquee */
