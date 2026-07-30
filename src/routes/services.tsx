@@ -51,6 +51,14 @@ function ServicesPage() {
               in hand. Every function under one roof, one focused team.
             </p>
           </Reveal>
+
+          <Reveal delay={0.15} className="relative mt-12 overflow-hidden rounded-3xl border border-white/10">
+            <img
+              src="/Herosec3.png"
+              alt="DigyUdaan Media House — SEO, Google Ads, Meta Ads, Website Development, Branding, Video Production, Content and Analytics services dashboard"
+              className="w-full h-auto object-cover"
+            />
+          </Reveal>
         </div>
       </section>
       <ServicesGrid />
