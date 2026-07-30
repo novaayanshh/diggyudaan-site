@@ -67,6 +67,14 @@ function SuccessPage() {
               focused on delivering real business outcomes.
             </p>
           </Reveal>
+
+          <Reveal delay={0.15} className="relative mt-10 overflow-hidden rounded-3xl border border-white/10">
+            <img
+              src="/OurStory.png"
+              alt="DigyUdaan Media House's story — from founding vision to a strategy built for every business"
+              className="w-full h-auto object-cover"
+            />
+          </Reveal>
         </div>
       </section>
 
