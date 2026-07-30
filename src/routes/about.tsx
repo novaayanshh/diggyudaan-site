@@ -46,6 +46,14 @@ function AboutPage() {
               their brands to the next level. Let's make some noise and change the game together.
             </p>
           </Reveal>
+
+          <Reveal delay={0.15} className="relative mt-12 overflow-hidden rounded-3xl border border-white/10">
+            <img
+              src="/About.png"
+              alt="About DigyUdaan Media House — the team behind the strategy, brand, and performance work"
+              className="w-full h-auto object-cover"
+            />
+          </Reveal>
         </div>
       </section>
 
